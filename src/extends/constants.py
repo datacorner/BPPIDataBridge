@@ -10,4 +10,4 @@ API_DEF_WAIT_DURATION_SEC = 2
 API_DEF_NB_ITERATION_MAX = 60
 API_STATUS_IN_PROGRESS = "IN_PROGRESS"
 API_STATUS_ERROR = "ERROR"
-API_BLOC_SIZE_LIMIT = 10000 # Same limitation as the current API call via java
+API_BLOC_SIZE_LIMIT = 2 # 10000 # Same limitation as the current API call via java

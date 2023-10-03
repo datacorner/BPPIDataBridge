@@ -14,22 +14,10 @@ class bppiRepository():
         self.log = log
         self.server = ""
         self.token = ""
-        self.table = ""
-        self.todos = []
 
     @property
     def repositoryConfig(self) -> repConfig:
         return self.__repositoryInfos
-
-    @property
-    def bppiTable(self) -> str:
-        # Priority on what in inside the config file
-        ini = self.config.getParameter(C.PARAM_BPPITABLE, C.EMPTY)
-        return ini if (ini != C.EMPTY) else self.repositoryConfig.repositoryTableName
-    
-    @property
-    def bppiTodos(self) -> str:
-        return self.todos
     
     def initialize(self, server, token) -> bool:
         """Initialize the Class instance by gathering the BPPI repository infos.
@@ -91,7 +79,7 @@ class bppiRepository():
             self.log.error("waitForEndOfProcessing() Error -> " + str(e))
             return C.API_STATUS_ERROR
 
-    def executeToDo(self) -> bool:
+    def executeToDo(self, todos, table) -> bool:
         """Execute a BPPI TO DO (be careful as this TO DO must exists)
         Returns:
             bool: False if error or the TO DO does not exists
@@ -99,12 +87,12 @@ class bppiRepository():
         try:
             api = bppiApiRepositoryWrapper(self.token, self.server)
             api.log = self.log
-            self.log.info("Execute these TO DO: {}".format(",".join(self.bppiTodos)))
+            self.log.info("Execute these TO DO: {}".format(",".join(todos)))
             if (self.repositoryConfig.loaded):
-                if (len(self.bppiTodos) > 0):
+                if (len(todos) > 0):
                     processId = api.executeTODO(self.repositoryConfig.repositoryId, 
-                                                self.bppiTodos, 
-                                                self.bppiTable)
+                                                todos, 
+                                                table)
                     self.waitForEndOfProcessing(processId)
                     self.log.info("To Do executed successfully")
                     return True
@@ -115,10 +103,10 @@ class bppiRepository():
             self.log.error("executeToDo() Error -> " + str(e))
             return False
 
-    def load(self, dfDataset) -> bool:
-        """ Upload a dataset (Pandas DataFrame) in the BPPI repository (in one transaction)
+    def load(self, dataset, table) -> bool:
+        """ Upload a dataset (etlDataset) in the BPPI repository (in one transaction)
         Args:
-            dfDataset (pd.DataFrame): DataFrame with the Data to upload
+            dfDataset (etlDataset): Dataset with the Data to upload
         Returns:
             bool: False if error
         """
@@ -129,22 +117,23 @@ class bppiRepository():
             if (self.repositoryConfig.loaded):
                 fileKeys = []
                 blocIdx, blocIdxEnd = 0, 0
-                datasize = dfDataset.shape[0]
+                datasize = dataset.count
                 if (datasize > C.API_BLOC_SIZE_LIMIT):
                     self.log.info("Data (all) size (Nb Lines= {}) is larger than the upload limit {}, split the data in several data blocs".format(datasize , C.API_BLOC_SIZE_LIMIT))
                     blocNum = 1
-                    while (blocIdxEnd < len(dfDataset)-1):
+                    while (blocIdxEnd < dataset.count-1):
                         # Create the blocs (Nb of line to API_BLOC_SIZE_LIMIT)
                         blocIdxEnd = blocIdx + C.API_BLOC_SIZE_LIMIT - 1
-                        if (blocIdxEnd >= len(dfDataset)-1):
-                            blocIdxEnd = len(dfDataset)-1
+                        if (blocIdxEnd >= dataset.count-1):
+                            blocIdxEnd = dataset.count-1
                         self.log.debug("Data bloc N°{}, Index from {} -> {}".format(blocNum, blocIdx, blocIdxEnd))
-                        blocData = dfDataset.iloc[blocIdx:blocIdxEnd:,:]
+                        #blocData = dataset.iloc[blocIdx:blocIdxEnd:,:]
+                        blocData = dataset.getRowBloc(blocIdx, blocIdxEnd)
                         blocIdx += C.API_BLOC_SIZE_LIMIT 
                         # 2 - Prepare the upload
                         uploadCfg = api.prepareUpload(self.repositoryConfig.repositoryId)
                         # 3 - Upload the file to the server
-                        blocData_toupload = blocData.to_csv(header=True, encoding=C.ENCODING, index=False)
+                        blocData_toupload = blocData.get_csv()
                         uploadOK = api.uploadData(blocData_toupload, uploadCfg.url, uploadCfg.headers)
                         fileKeys.append(uploadCfg.key)
                         if (uploadOK):
@@ -152,12 +141,13 @@ class bppiRepository():
                         else:
                             self.log.warning("Data bloc N°{} was NOT uploaded successfully".format(blocNum))
                             break
+                        blocNum +=1
                 else:
                     self.log.debug("The data can be uploaded in one unique bloc")
                     # 2 - Prepare the complete file upload
                     uploadCfg = api.prepareUpload(self.repositoryConfig.repositoryId)
                     fileKeys.append(uploadCfg.key)
-                    blocData_toupload = dfDataset.to_csv(header=True, encoding=C.ENCODING, index=False)
+                    blocData_toupload = dataset.get_csv()
                     uploadOK = api.uploadData(blocData_toupload, uploadCfg.url, uploadCfg.headers)
                     keys = uploadCfg.key
                     if (uploadOK):
@@ -166,9 +156,9 @@ class bppiRepository():
                         self.log.warning("Data was NOT uploaded successfully")
                 keys = json.dumps(fileKeys)
                 if (uploadOK):
-                    self.log.info("Load the uploaded data/bloc(s) into the BPPI repository")
+                    self.log.info("Load the uploaded data/bloc(s) into the BPPI repository table {}".format(table))
                     # 4 - Load the file into the BPPI repository
-                    processId = api.loadFileToBPPIRepository(self.repositoryConfig.repositoryId, keys, self.bppiTable)
+                    processId = api.loadFileToBPPIRepository(self.repositoryConfig.repositoryId, keys, table)
                     self.waitForEndOfProcessing(processId)
                 else:
                     self.log.error("The data have not been loaded successfully")

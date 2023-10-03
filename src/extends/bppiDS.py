@@ -2,7 +2,7 @@ __author__ = "datacorner.fr"
 __email__ = "admin@datacorner.fr"
 __license__ = "MIT"
 
-from datasources.csvFileDS import csvFileDS 
+from pipelite.interfaces.IDataSource import IDataSource 
 import pipelite.constants as C
 import importlib.resources
 from  extends.bppi.bppiRepository import bppiRepository
@@ -12,7 +12,7 @@ CFGPARAMS_SERVER = "server"
 CFGPARAMS_TOKEN = "token"
 CFGPARAMS_TABLE = "table"
 
-class bppiDS(csvFileDS):
+class bppiDS(IDataSource):
 
     @property
     def parametersValidationFile(self):
@@ -36,10 +36,11 @@ class bppiDS(csvFileDS):
             self.log.error("{}".format(e))
             return False
 
-    def load(self) -> int:
+    def load(self, dataset) -> int:
         # Initialize repository
         bppiRepo = bppiRepository(log=self.log)
         bppiRepo.initialize(server=self.server, token=self.token)
         # load data files
-    
+        if (bppiRepo.load(dataset, self.table)):
+            pass
         return 0

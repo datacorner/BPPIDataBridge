@@ -1,4 +1,0 @@
-2023-09-30 10:52:53,668|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: The  parameter is mandatory and cannot be empty
-2023-09-30 10:52:53,669|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.process()} pipelite cannot be initialized: The Data pipeline has not been created successfully
-2023-09-30 10:53:16,802|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: The  parameter is mandatory and cannot be empty
-2023-09-30 10:53:16,802|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.process()} pipelite cannot be initialized: The Data pipeline has not been created successfully
