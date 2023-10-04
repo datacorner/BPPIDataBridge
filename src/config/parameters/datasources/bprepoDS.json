@@ -1,0 +1,16 @@
+{
+    "$id": "https://example.com/person.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Blue Prism Repository Connection Parameters",
+    "type" : "object",
+    "properties" : { 
+          "connectionstring": {"type" : "string"},
+          "processname": {"type" : "string"},
+          "parameters": {"type" : "array"},
+          "stagetypefilters": {"type" : "array"},
+          "includevbo": {"type" : "boolean"},
+          "unicode": {"type" : "boolean"},
+          "delta-file": {"type" : "string"}
+          },
+    "required": ["connectionstring", "processname"]
+}

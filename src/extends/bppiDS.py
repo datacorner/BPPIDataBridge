@@ -4,7 +4,6 @@ __license__ = "MIT"
 
 from pipelite.interfaces.IDataSource import IDataSource 
 import pipelite.constants as C
-import importlib.resources
 from  extends.bppi.bppiRepository import bppiRepository
 
 CFGFILES_DSOBJECT = "bppiDS.json"
@@ -17,7 +16,7 @@ class bppiDS(IDataSource):
 
     @property
     def parametersValidationFile(self):
-        filename = importlib.resources.files(C.RESOURCE_PKGFOLDER_DATASOURCES).joinpath(CFGFILES_DSOBJECT)
+        filename = self.getResourceFile(C.RESOURCE_PKGFOLDER_DATASOURCES, CFGFILES_DSOBJECT)
         return str(filename)
     
     def initialize(self, cfg) -> bool:

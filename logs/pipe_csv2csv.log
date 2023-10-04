@@ -2203,3 +2203,587 @@ On instance['todos']:
 2023-10-04 09:41:45,299|pipelite.pipelineProcess|INFO|{pipelines.directPL.load()}  <S1> Rows: 3 | Columns: Index(['col1', 'col2', 'col3'], dtype='object') 
 2023-10-04 09:41:45,299|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Pipeline Stats -> E:3 T:0 L:0
 2023-10-04 09:41:45,300|pipelite.pipelineProcess|INFO|{pipelines.directPL.terminate()} *** End of Job treatment ***
+2023-10-04 10:07:18,391|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:07:18,404|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:07:18,405|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:07:18,406|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:07:18,406|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:07:18,406|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:07:18,419|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:07:18,419|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:07:18,419|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:07:18,429|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:07:18,429|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:07:18,516|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:07:18,517|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:07:18,517|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:07:18,529|pipelite.pipelineProcess|ERROR|{pipelines.directPL.validateParametersCfg()} 'connectionstring' is a required property
+
+Failed validating 'required' in schema:
+    {'$id': 'https://example.com/person.schema.json',
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'properties': {'connectionstring': {'type': 'string'},
+                    'delta-file': {'type': 'string'},
+                    'includevbo': {'type': 'boolean'},
+                    'parameters': {'type': 'array'},
+                    'processname': {'type': 'string'},
+                    'stagetypefilters': {'type': 'array'},
+                    'unicode': {'type': 'boolean'}},
+     'required': ['connectionstring', 'processname'],
+     'title': 'Blue Prism Repository Connection Parameters',
+     'type': 'object'}
+
+On instance:
+    {'encoding': 'utf-8',
+     'filename': 'a.csv',
+     'path': 'tests/data/',
+     'separator': ','}
+2023-10-04 10:07:18,529|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'bprepoDS' object is not subscriptable
+2023-10-04 10:07:18,529|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initAllETLObjects()} Extractor(s) has/have not been initialized properly
+2023-10-04 10:07:18,529|pipelite.pipelineProcess|ERROR|{pipelines.directPL.initialize()} All the pipeline objects could not be configured and initialized properly
+2023-10-04 10:07:18,530|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.execute()} Error when processing the data: The Data pipeline has not been initialized properly
+2023-10-04 10:08:45,618|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:08:45,633|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:08:45,634|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:08:45,634|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:08:45,634|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:08:45,634|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:08:45,648|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:08:45,648|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:08:45,648|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:08:45,658|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: datasources.csvFileDS
+2023-10-04 10:08:45,658|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> datasources.csvFileDS
+2023-10-04 10:08:45,660|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module datasources.csvFileDS imported, instantiate the class
+2023-10-04 10:08:45,660|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:08:45,660|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: datasources.csvFileDS
+2023-10-04 10:08:45,669|pipelite.pipelineProcess|ERROR|{pipelines.directPL.validateParametersCfg()} 'filename' is a required property
+
+Failed validating 'required' in schema:
+    {'$id': 'https://example.com/person.schema.json',
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'properties': {'encoding': {'type': 'string'},
+                    'filename': {'type': 'string'},
+                    'path': {'type': 'string'},
+                    'separator': {'type': 'string'}},
+     'required': ['filename', 'path', 'encoding'],
+     'title': 'CSV File Parameters',
+     'type': 'object'}
+
+On instance:
+    {'connectionstring': 'DRIVER={ODBC Driver 18 for SQL '
+                         'Server};SERVER=localhost\\SQLEXPRESS;DATABASE=blueprism;UID=sa;PWD=sa123@;ENCRYPT=No',
+     'delta-file': '',
+     'includevbo': True,
+     'parameters': ['Customer Number',
+                    'Product',
+                    'Investment',
+                    'Deposit',
+                    'Reason Text'],
+     'processname': 'IFA Application Process',
+     'stagetypefilters': [1, 4, 65536, 8, 536870912],
+     'unicode': False}
+2023-10-04 10:08:45,669|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'csvFileDS' object is not subscriptable
+2023-10-04 10:08:45,669|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initAllETLObjects()} Extractor(s) has/have not been initialized properly
+2023-10-04 10:08:45,669|pipelite.pipelineProcess|ERROR|{pipelines.directPL.initialize()} All the pipeline objects could not be configured and initialized properly
+2023-10-04 10:08:45,669|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.execute()} Error when processing the data: The Data pipeline has not been initialized properly
+2023-10-04 10:10:15,660|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:10:15,675|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:10:15,676|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:10:15,676|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:10:15,676|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:10:15,677|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:10:15,691|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:10:15,691|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:10:15,691|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:10:15,701|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: datasources.csvFileDS
+2023-10-04 10:10:15,701|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> datasources.csvFileDS
+2023-10-04 10:10:15,703|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module datasources.csvFileDS imported, instantiate the class
+2023-10-04 10:10:15,703|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:10:15,703|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: datasources.csvFileDS
+2023-10-04 10:10:15,712|pipelite.pipelineProcess|ERROR|{pipelines.directPL.validateParametersCfg()} 'filename' is a required property
+
+Failed validating 'required' in schema:
+    {'$id': 'https://example.com/person.schema.json',
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'properties': {'encoding': {'type': 'string'},
+                    'filename': {'type': 'string'},
+                    'path': {'type': 'string'},
+                    'separator': {'type': 'string'}},
+     'required': ['filename', 'path', 'encoding'],
+     'title': 'CSV File Parameters',
+     'type': 'object'}
+
+On instance:
+    {'connectionstring': 'DRIVER={ODBC Driver 18 for SQL '
+                         'Server};SERVER=localhost\\SQLEXPRESS;DATABASE=blueprism;UID=sa;PWD=sa123@;ENCRYPT=No',
+     'delta-file': '',
+     'includevbo': True,
+     'parameters': ['Customer Number',
+                    'Product',
+                    'Investment',
+                    'Deposit',
+                    'Reason Text'],
+     'processname': 'IFA Application Process',
+     'stagetypefilters': [1, 4, 65536, 8, 536870912],
+     'unicode': False}
+2023-10-04 10:10:15,712|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'csvFileDS' object is not subscriptable
+2023-10-04 10:10:15,712|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initAllETLObjects()} Extractor(s) has/have not been initialized properly
+2023-10-04 10:10:15,712|pipelite.pipelineProcess|ERROR|{pipelines.directPL.initialize()} All the pipeline objects could not be configured and initialized properly
+2023-10-04 10:10:15,712|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.execute()} Error when processing the data: The Data pipeline has not been initialized properly
+2023-10-04 10:11:24,090|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:11:24,104|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:11:24,105|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:11:24,105|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:11:24,105|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:11:24,105|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:11:24,118|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:11:24,119|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:11:24,119|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:11:24,128|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:11:24,128|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:11:24,218|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:11:24,218|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:11:24,218|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:11:46,911|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:11:46,911|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:11:46,912|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:11:46,959|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:11:46,959|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:11:46,960|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:11:46,969|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:11:46,969|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:40:57,136|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:40:57,150|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:40:57,151|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:40:57,152|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:40:57,152|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:40:57,152|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:40:57,170|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:40:57,170|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:40:57,171|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:40:57,188|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:40:57,189|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:42:17,058|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:42:17,073|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:42:17,074|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:42:17,075|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:42:17,075|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:42:17,075|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:42:17,087|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:42:17,087|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:42:17,088|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:42:17,097|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:42:17,098|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:43:50,774|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:43:50,788|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:43:50,789|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:43:50,790|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:43:50,790|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:43:50,790|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:43:50,803|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:43:50,803|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:43:50,803|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:43:50,812|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:43:50,812|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:44:15,032|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:44:15,046|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:44:15,047|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:44:15,047|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:44:15,047|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:44:15,048|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:44:15,061|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:44:15,061|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:44:15,061|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:44:15,071|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:44:15,071|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:44:28,469|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:44:28,482|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:44:28,483|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:44:28,483|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:44:28,484|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:44:28,484|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:44:28,496|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:44:28,497|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:44:28,497|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:44:28,507|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:44:28,507|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:44:38,912|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:44:38,925|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:44:38,926|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:44:38,927|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:44:38,927|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:44:38,927|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:44:38,940|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:44:38,940|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:44:38,941|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:44:38,949|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:44:38,949|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:44:48,358|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:44:48,372|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:44:48,373|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:44:48,374|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:44:48,374|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:44:48,374|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:44:48,388|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:44:48,389|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:44:48,389|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:44:48,398|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:44:48,398|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:44:48,406|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:44:48,406|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: can't set attribute 'query'
+2023-10-04 10:44:48,406|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:44:48,406|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:44:48,406|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initAllETLObjects()} Extractor(s) has/have not been initialized properly
+2023-10-04 10:44:48,406|pipelite.pipelineProcess|ERROR|{pipelines.directPL.initialize()} All the pipeline objects could not be configured and initialized properly
+2023-10-04 10:44:48,407|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.execute()} Error when processing the data: The Data pipeline has not been initialized properly
+2023-10-04 10:47:46,583|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:47:46,597|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:47:46,598|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:47:46,599|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:47:46,599|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:47:46,599|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:47:46,612|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:47:46,613|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:47:46,613|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:47:46,622|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:47:46,623|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:47:46,630|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:47:46,631|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:47:46,631|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:47:53,598|pipelite.pipelineProcess|ERROR|{extends.bprepoDS.bpQuery()} bppiPLRBluePrismRepo.__buildQuery() -> Unable to build the Blue Prism Query 'bprepoDS' object has no attribute 'deltaFile'
+2023-10-04 10:47:55,771|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} module 'extends.constants' has no attribute 'RESOURCE_PKGFOLDER_DATASOURCES'
+2023-10-04 10:47:55,771|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initAllETLObjects()} Extractor(s) has/have not been initialized properly
+2023-10-04 10:47:55,771|pipelite.pipelineProcess|ERROR|{pipelines.directPL.initialize()} All the pipeline objects could not be configured and initialized properly
+2023-10-04 10:47:55,772|pipelite.pipelineProcess|ERROR|{pipelite.pipelineProcess.execute()} Error when processing the data: The Data pipeline has not been initialized properly
+2023-10-04 10:49:24,562|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:49:24,577|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:49:24,578|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:49:24,578|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:49:24,578|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:49:24,578|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:49:24,592|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:49:24,592|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:49:24,592|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:49:24,601|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:49:24,601|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:49:24,607|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:49:24,608|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:49:24,608|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:49:24,619|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:49:24,619|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:49:24,619|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:49:24,634|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:49:24,634|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:49:24,634|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:49:24,643|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:49:24,643|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:49:24,730|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:49:24,730|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:49:24,730|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:49:24,738|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:49:24,738|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:49:24,738|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:49:24,779|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:49:24,779|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:49:24,779|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:49:24,786|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:49:24,786|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:49:24,787|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:49:24,787|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:49:24,787|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:49:24,787|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:49:24,787|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:49:24,787|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:49:24,788|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:49:24,788|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:49:29,857|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:49:29,857|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:49:44,787|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:49:44,787|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:49:52,527|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:49:52,527|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:49:54,047|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:49:54,047|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:49:54,844|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:49:54,844|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:03,955|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:03,956|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:04,958|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:04,958|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:05,827|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:05,827|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:06,533|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:06,533|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:07,198|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:07,198|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:07,802|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:07,802|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:08,447|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:08,447|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:09,112|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:09,112|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:09,737|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:50:09,737|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:50:25,504|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:51:16,284|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:51:16,298|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:51:16,299|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:51:16,299|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:51:16,299|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:51:16,299|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:51:16,312|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:51:16,313|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:51:16,313|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:51:16,322|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:51:16,323|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:51:16,327|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:51:16,328|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:51:16,328|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:51:16,339|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:51:16,339|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:51:16,339|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:51:16,352|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:51:16,352|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:51:16,353|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:51:16,359|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:51:16,359|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:51:16,445|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:51:16,445|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:51:16,445|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:51:16,452|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:51:16,452|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:51:16,452|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:51:16,493|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:51:16,494|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:51:16,494|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:51:16,500|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:51:16,500|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:51:16,502|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:51:16,502|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:51:16,502|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:51:16,502|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:51:16,503|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:51:16,503|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:51:16,503|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:51:16,503|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:51:16,750|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} build() -> Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:51:16,750|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:51:38,138|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:51:38,152|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:51:38,153|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:51:38,154|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:51:38,154|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:51:38,154|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:51:38,167|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:51:38,168|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:51:38,168|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:51:38,177|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:51:38,178|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:51:38,183|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:51:38,183|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:51:38,183|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:51:38,196|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:51:38,196|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:51:38,196|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:51:38,211|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:51:38,211|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:51:38,211|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:51:38,218|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:51:38,219|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:51:38,308|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:51:38,308|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:51:38,308|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:51:38,315|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:51:38,316|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:51:38,316|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:51:38,359|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:51:38,359|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:51:38,359|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:51:38,366|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:51:38,366|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:51:38,367|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:51:38,367|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:51:38,368|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:51:38,368|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:51:38,368|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:51:38,368|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:51:38,368|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:51:38,368|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:51:38,595|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} Unable to build the Blue Prism Query module 'extends.constants' has no attribute 'YES'
+2023-10-04 10:51:38,595|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.build()} Unable to build the Blue Prism Query -> string indices must be integers
+2023-10-04 10:52:05,817|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:52:05,831|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:52:05,832|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:52:05,832|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:52:05,832|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:52:05,833|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:52:05,846|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:52:05,846|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:52:05,846|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:52:05,856|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:52:05,856|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:52:05,862|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:52:05,862|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:52:05,862|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:52:05,874|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:52:05,874|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:52:05,875|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:52:05,889|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:52:05,890|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:52:05,890|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:52:05,896|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:52:05,897|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:52:05,985|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:52:05,986|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:52:05,986|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:52:05,992|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:52:05,992|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:52:05,993|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:52:06,035|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:52:06,035|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:52:06,035|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:52:06,042|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:52:06,043|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:52:06,043|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:52:06,043|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:52:06,044|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:52:06,044|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:52:06,044|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:52:06,044|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:52:06,044|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:52:06,044|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:52:09,731|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:52:49,765|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:52:49,787|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:52:49,789|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:52:49,789|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:52:49,789|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:52:49,789|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:52:49,803|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:52:49,803|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:52:49,804|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:52:49,813|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:52:49,813|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:52:49,820|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:52:49,820|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:52:49,820|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:52:49,831|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:52:49,831|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:52:49,831|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:52:49,847|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:52:49,847|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:52:49,847|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:52:49,855|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:52:49,855|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:52:49,946|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:52:49,946|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:52:49,946|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:52:49,953|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:52:49,954|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:52:49,954|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:52:49,997|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:52:49,997|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:52:49,997|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:52:50,004|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:52:50,004|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:52:50,005|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:52:50,005|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:52:50,006|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:52:50,006|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:52:50,006|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:52:50,006|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:52:50,006|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:52:50,006|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:52:51,803|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:53:09,801|pipelite.pipelineProcess|ERROR|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} Unable to build the Blue Prism Query sequence item 0: expected str instance, int found
+2023-10-04 10:56:51,554|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:56:51,568|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:56:51,569|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:56:51,569|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:56:51,569|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:56:51,569|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:56:51,582|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:56:51,582|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:56:51,583|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:56:51,592|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:56:51,592|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:56:51,598|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:56:51,598|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:56:51,598|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:56:51,609|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:56:51,610|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:56:51,610|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:56:51,623|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:56:51,623|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:56:51,624|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:56:51,631|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:56:51,631|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:56:51,717|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:56:51,717|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:56:51,717|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:56:51,724|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:56:51,724|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:56:51,725|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:56:51,766|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:56:51,766|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:56:51,767|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:56:51,774|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:56:51,774|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:56:51,775|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:56:51,775|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:56:51,775|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:56:51,775|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:56:51,775|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:56:51,776|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:56:51,776|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:56:51,776|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:56:55,294|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:57:42,098|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 10:57:42,112|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelines.directPL
+2023-10-04 10:57:42,113|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelines.directPL imported, instantiate the class
+2023-10-04 10:57:42,113|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:57:42,113|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 10:57:42,113|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 10:57:42,127|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 10:57:42,127|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:57:42,127|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:57:42,136|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 10:57:42,136|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 10:57:42,142|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 10:57:42,142|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:57:42,143|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 10:57:42,153|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 10:57:42,153|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 10:57:42,153|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 10:57:42,167|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 10:57:42,167|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:57:42,167|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:57:42,174|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 10:57:42,174|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 10:57:42,261|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 10:57:42,261|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 10:57:42,262|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 10:57:42,268|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 10:57:42,269|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 10:57:42,269|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 10:57:42,309|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 10:57:42,310|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 10:57:42,310|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 10:57:42,317|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 10:57:42,317|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 10:57:42,318|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers.doNothingTR'
+2023-10-04 10:57:42,318|pipelite.pipelineProcess|DEBUG|{pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 10:57:42,318|pipelite.pipelineProcess|ERROR|{pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 10:57:42,318|pipelite.pipelineProcess|INFO|{pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 10:57:42,318|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 10:57:42,319|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 10:57:42,319|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 10:57:42,319|pipelite.pipelineProcess|INFO|{pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 10:57:42,320|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:57:51,967|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:57:56,292|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:58:06,641|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:58:24,653|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 10:58:25,321|pipelite.pipelineProcess|INFO|{extends.bprepoDS.read_sql()} Connect to the ODBC Datasource ...
+2023-10-04 10:58:25,325|pipelite.pipelineProcess|ERROR|{extends.bprepoDS.read_sql()} Error while reading ODBC Data Source: Code: 01000 - Message: [01000] [unixODBC][Driver Manager]Can't open lib 'ODBC Driver 18 for SQL Server' : file not found (0) (SQLDriverConnect)
+2023-10-04 10:58:25,521|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested

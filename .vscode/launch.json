@@ -5,13 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "CSV 2 CSV - Direct",
+            "name": "CSV 2 BPPI - Direct",
             "type": "python",
             "request": "launch",
             "program": "src/main.py",
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": ["-cfg", "./src/config/pipelines/csv2bppi_direct.json"]
+        },
+        {
+            "name": "BP Repo 2 BPPI - Direct",
+            "type": "python",
+            "request": "launch",
+            "program": "src/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-cfg", "./src/config/pipelines/bprepo2bppi_direct.json"]
         }
     ]
 }
