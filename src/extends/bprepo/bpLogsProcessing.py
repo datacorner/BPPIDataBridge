@@ -60,7 +60,7 @@ class bpLogsProcessing():
         try:
             return set(BP_MANDATORY_FIELD_LIST).issubset(self.__dfBluePrismLogs.columns)
         except Exception as e:
-            self.log.error("blueprismLogs.dfStructureCheck() Error -> " + str(e))
+            self.log.error(str(e))
             return False
 
     def __parseAttrs(self, logid, attribute, dfattributes) -> pd.DataFrame:
@@ -102,7 +102,7 @@ class bpLogsProcessing():
                         dfattributes = pd.concat([dfattributes, df_new_row]) 
             return dfattributes
         except Exception as e:
-            self.log.error("blueprismLogs.__parseAttrs() -> Unable to parse the BP Attribute " + str(e))
+            self.log.error("Unable to parse the BP Attribute " + str(e))
             return dfattributes
 
     def __getAttributesFromLogs(self, parameters) -> pd.DataFrame:
@@ -155,7 +155,7 @@ class bpLogsProcessing():
                 return self.content
             
         except Exception as e:
-            self.log.error("blueprismLogs.__getAttributesFromLogs() -> Unable to get attributes from the Blue Prism logs " + str(e))
+            self.log.error("Unable to get attributes from the Blue Prism logs " + str(e))
             return self.content
 
     def addAttributes(self, attributes) -> bool:
@@ -174,7 +174,7 @@ class bpLogsProcessing():
             return False
         
         except Exception as e:
-            self.log.error("blueprismLogs.addAttributes() -> Unable to manage the Blue Prism logs dataset " + str(e))
+            self.log.error("Unable to manage the Blue Prism logs dataset " + str(e))
             return False
 
     def removeStartEndStages(self, mainpage) -> bool:
@@ -201,7 +201,7 @@ class bpLogsProcessing():
             return True
         
         except Exception as e:
-            self.log.error("blueprismLogs.removeStartEndStage() -> Unable to manage the remove the start and end stages from the logs " + str(e))
+            self.log.error("Unable to manage the remove the start and end stages from the logs " + str(e))
             return False
         
     def createStageID(self) -> bool:
@@ -227,7 +227,7 @@ class bpLogsProcessing():
 
             return True
         except Exception as e:
-            self.log.error("blueprismLogs.removeStartEndStage() -> Unable to remove the start and end stages from the logs " + str(e))
+            self.log.error("Unable to remove the start and end stages from the logs " + str(e))
             return False
 
     def dropFields(self, fields):
@@ -243,5 +243,5 @@ class bpLogsProcessing():
             return True
         
         except Exception as e:
-            self.log.error("blueprismLogs.dropFields() -> Unable to remove the fields from the set" + str(e))
+            self.log.error("Unable to remove the fields from the set" + str(e))
             return False
