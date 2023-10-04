@@ -5,7 +5,7 @@ __license__ = "MIT"
 import datetime
 import importlib.resources
 
-from datasources.odbcDS import odbcDS 
+from pipelite.datasources.odbcDS import odbcDS 
 import pipelite.constants as P
 from pipelite.etlDataset import etlDataset
 
@@ -54,7 +54,7 @@ class bprepoDS(odbcDS):
             self.log.error("{}".format(e))
             return False
         
-    def __getDeltaTag(self):
+    def __getDeltaTag(self) -> str:
         """ Get the last load date to use for the delta loading (when requested)
         Returns:
             _type_: date in straing format
@@ -93,8 +93,6 @@ class bprepoDS(odbcDS):
             str: built SQL Query
         """
         try: 
-            # Get the last delta load if needed:
-            lastDeltaDate = self.__getDeltaTag()
             # Build the Query
             sqlBuilder = blueprismSQLBuilder(log=self.log,
                                             query=self.getQueryFile)
@@ -102,10 +100,8 @@ class bprepoDS(odbcDS):
                                            processName=self.processName,
                                            includeVBO=self.vbo,
                                            unicode=self.unicode,
-                                           deltaDate=lastDeltaDate)
+                                           deltaDate=self.__getDeltaTag())
             sql = sqlBuilder.build()
-            # Update the date for the next delta load
-            self.__updDeltaTag()
             return sql
         except Exception as e:
             self.log.error("bppiPLRBluePrismRepo.__buildQuery() -> Unable to build the Blue Prism Query " + str(e))
@@ -119,15 +115,22 @@ class bprepoDS(odbcDS):
         # get the bru logs from the BP repository
         originalDS = self.read_sql(self.bpQuery)
 
-        # -- Transform the logs --
-        logs = bpLogsProcessing(dfLogs=originalDS.get(), log=self.log)
-        # Filter out the df by selecting only the Start & End (main page / process) stages if requested
-        logs.removeStartEndStages(C.BP_MAINPAGE_DEFAULT)
-        # Get the attributes from the BP logs
-        logs.addAttributes(",".join(str(n) for n in self.parameters))
-        # Add the stage identifier / event mapping needs
-        logs.createStageID()
-        # drop working or obsolete fields
-        logs.dropFields([C.COL_OBJECT_TAB, C.BPLOG_OBJTYPE_COL, C.BPLOG_OBJNAME_COL])
+        if (originalDS.count > 0):
+            # -- Transform the logs --
+            logs = bpLogsProcessing(dfLogs=originalDS.get(), log=self.log)
+            # Filter out the df by selecting only the Start & End (main page / process) stages if requested
+            logs.removeStartEndStages(C.BP_MAINPAGE_DEFAULT)
+            # Get the attributes from the BP logs
+            logs.addAttributes(",".join(str(n) for n in self.parameters))
+            # Add the stage identifier / event mapping needs
+            logs.createStageID()
+            # drop working or obsolete fields
+            logs.dropFields([C.COL_OBJECT_TAB, C.BPLOG_OBJTYPE_COL, C.BPLOG_OBJNAME_COL])
 
-        return originalDS
+            newLogs = etlDataset()
+            newLogs.set(logs.content)
+
+        # Update the date for the next delta load
+        self.__updDeltaTag()
+
+        return newLogs

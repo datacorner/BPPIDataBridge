@@ -127,7 +127,7 @@ class bpLogsProcessing():
                 self.log.debug("Number of attributes found: {}".format(str(dfattributes.shape[0])))
                 # Only keep the desired parameters
                 self.log.debug("Filter out the desired parameters")
-                # Build the filter with the parameters list
+                # Build the filter with the parameters list / 
                 params = [ "\"" + x + "\"" for x in parameters.split(",") ]
                 paramQuery = "Name in (" + ",".join(params) + ")"
                 dfattributes = dfattributes.query(paramQuery)

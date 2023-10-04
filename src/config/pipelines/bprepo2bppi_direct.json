@@ -1,5 +1,5 @@
 {
-    "classname" : "pipelines.directPL",
+    "classname" : "pipelite.pipelines.directPL",
     "extractors" : [ {
         "name": "S1",
         "classname": "extends.bprepoDS",
@@ -10,7 +10,7 @@
             "stagetypefilters": [ 1, 4, 65536, 8, 536870912 ],
             "includevbo" : true,
             "unicode": false,
-            "delta-file": ""
+            "delta-file": "delta.tag"
         }   
     } ],
     "loaders" : [ {

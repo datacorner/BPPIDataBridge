@@ -45,4 +45,4 @@ class bppiDS(IDataSource):
         if (bppiRepo.load(dataset, self.table)):
             # Execute To DO if needed
             bppiRepo.executeToDo(todos=self.todos, table=self.table)
-        return 0
+        return dataset.count
