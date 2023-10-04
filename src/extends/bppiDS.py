@@ -11,6 +11,7 @@ CFGFILES_DSOBJECT = "bppiDS.json"
 CFGPARAMS_SERVER = "server"
 CFGPARAMS_TOKEN = "token"
 CFGPARAMS_TABLE = "table"
+CFGPARAMS_TODOS = "todos"
 
 class bppiDS(IDataSource):
 
@@ -31,6 +32,7 @@ class bppiDS(IDataSource):
             self.server = cfg.getParameter(CFGPARAMS_SERVER, C.EMPTY)
             self.token = cfg.getParameter(CFGPARAMS_TOKEN, C.EMPTY)
             self.table = cfg.getParameter(CFGPARAMS_TABLE, C.EMPTY)
+            self.todos = cfg.getParameter(CFGPARAMS_TODOS, [])
             return True
         except Exception as e:
             self.log.error("{}".format(e))
@@ -42,5 +44,6 @@ class bppiDS(IDataSource):
         bppiRepo.initialize(server=self.server, token=self.token)
         # load data files
         if (bppiRepo.load(dataset, self.table)):
-            pass
+            # Execute To DO if needed
+            bppiRepo.executeToDo(todos=self.todos, table=self.table)
         return 0

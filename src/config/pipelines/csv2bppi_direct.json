@@ -17,7 +17,7 @@
             "server": "https://bp-staging.timelinepi.com",
             "token": "cmVwb3NpdG9yeTpTZVp6czkyVnNsNmtsOTluRy1IZTNCTHNReHl1OEQ5Wkw4Yy1FTjJqZW16VkxhNGpyZkRUTVZGZklYV3JkNDIyQVlxMGV6OENkMThERnZXb01MZHR4dw==",
             "table": "pipelite",
-            "todos": []
+            "todos": [ "pipelite_todo" ]
         }   
     } ],
     "transformers":  [
