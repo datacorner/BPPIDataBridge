@@ -37,7 +37,7 @@ class bppiDS(IDataSource):
             self.log.error("{}".format(e))
             return False
 
-    def load(self, dataset) -> int:
+    def write(self, dataset) -> bool:
         # Initialize repository
         bppiRepo = bppiRepository(log=self.log)
         bppiRepo.initialize(server=self.server, token=self.token)
@@ -45,4 +45,4 @@ class bppiDS(IDataSource):
         if (bppiRepo.load(dataset, self.table)):
             # Execute To DO if needed
             bppiRepo.executeToDo(todos=self.todos, table=self.table)
-        return dataset.count
+        return True

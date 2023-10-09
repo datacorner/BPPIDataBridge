@@ -102,12 +102,13 @@ class bprepoDS(odbcDS):
                                            unicode=self.unicode,
                                            deltaDate=self.__getDeltaTag())
             sql = sqlBuilder.build()
+            self.log.debug("SQL -> {}".format(sql))
             return sql
         except Exception as e:
-            self.log.error("bppiPLRBluePrismRepo.__buildQuery() -> Unable to build the Blue Prism Query " + str(e))
+            self.log.error("Unable to build the Blue Prism Query " + str(e))
             return C.EMPTY
 
-    def extract(self) -> etlDataset:
+    def read(self) -> etlDataset:
         """ Returns all the data in a DataFrame format
         Returns:
             pd.DataFrame(): dataset read

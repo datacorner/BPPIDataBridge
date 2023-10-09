@@ -3675,3 +3675,545 @@ On instance:
       dtype='object') 
 2023-10-04 15:14:12,357|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Pipeline Stats -> E:1391 T:0 L:0
 2023-10-04 15:14:12,358|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.terminate()} *** End of Job treatment ***
+2023-10-04 15:18:45,360|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.process()} pipelite initialisation ...
+2023-10-04 15:18:45,375|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> pipelite.pipelines.directPL
+2023-10-04 15:18:45,378|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-04 15:18:45,378|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 15:18:45,379|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} *** Starting pipeline processing ***
+2023-10-04 15:18:45,380|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} Initializing Extractor(s) ...
+2023-10-04 15:18:45,392|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initETLObjects()} There is/are 1 [$.extractors] objects(es)
+2023-10-04 15:18:45,393|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 15:18:45,393|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 15:18:45,402|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bprepoDS
+2023-10-04 15:18:45,403|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bprepoDS
+2023-10-04 15:18:45,421|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bprepoDS imported, instantiate the class
+2023-10-04 15:18:45,422|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 15:18:45,423|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Initialize Object: extends.bprepoDS
+2023-10-04 15:18:45,432|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Data Source extends.bprepoDS initialized successfully
+2023-10-04 15:18:45,432|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} There is/are 1 extractor(s)
+2023-10-04 15:18:45,433|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} Initializing Loaders(s) ...
+2023-10-04 15:18:45,446|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initETLObjects()} There is/are 1 [$.loaders] objects(es)
+2023-10-04 15:18:45,446|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 15:18:45,447|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 15:18:45,453|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initETLObjects()} Instantiate Object: extends.bppiDS
+2023-10-04 15:18:45,454|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> extends.bppiDS
+2023-10-04 15:18:45,571|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Module extends.bppiDS imported, instantiate the class
+2023-10-04 15:18:45,572|pipelite.pipelineProcess|INFO|{N.A.} Class instantiated successfully
+2023-10-04 15:18:45,573|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Initialize Object: extends.bppiDS
+2023-10-04 15:18:45,580|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Data Source extends.bppiDS initialized successfully
+2023-10-04 15:18:45,581|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} There is/are 1 loader(s)
+2023-10-04 15:18:45,581|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} Initializing Transformer(s) ...
+2023-10-04 15:18:45,595|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initETLObjects()} There is/are 1 [$.transformers] objects(es)
+2023-10-04 15:18:45,596|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Intantiate needs and configured objects ...
+2023-10-04 15:18:45,596|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Validate and initialize Object...
+2023-10-04 15:18:45,604|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initETLObjects()} Instantiate Object: transformers.doNothingTR
+2023-10-04 15:18:45,605|pipelite.pipelineProcess|DEBUG|{N.A.} pipelineFactory.instantiate(): Import module -> transformers.doNothingTR
+2023-10-04 15:18:45,606|pipelite.pipelineProcess|ERROR|{N.A.} etlObject.instantiate(): Error when loading the Class: No module named 'transformers'
+2023-10-04 15:18:45,606|pipelite.pipelineProcess|DEBUG|{pipelite.pipelines.directPL.__initETLObjects()} Initialize Object: transformers.doNothingTR
+2023-10-04 15:18:45,607|pipelite.pipelineProcess|ERROR|{pipelite.pipelines.directPL.__initETLObjects()} 'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-04 15:18:45,607|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.__initAllETLObjects()} There is/are 0 Transformers(s)
+2023-10-04 15:18:45,608|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} pipelite has been initialized successfully
+2023-10-04 15:18:45,608|pipelite.pipelineProcess|INFO|{pipelite.pipelineProcess.execute()} Now, Extract data from Data Source ...
+2023-10-04 15:18:45,609|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.extract()} *** EXTRACT ***
+2023-10-04 15:18:45,609|pipelite.pipelineProcess|INFO|{pipelite.pipelines.directPL.extract()} Extracting data from the Data Source S1
+2023-10-04 15:18:45,610|pipelite.pipelineProcess|ERROR|{extends.bprepoDS.__getDeltaTag()} Unable to read/get the tagged delta date
+2023-10-04 15:18:45,611|pipelite.pipelineProcess|INFO|{extends.bprepo.blueprismSQLBuilder.setSubstDict()} FULL Load requested
+2023-10-04 15:18:45,612|pipelite.pipelineProcess|DEBUG|{extends.bprepoDS.bpQuery()} SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND processname IS NULL
+2023-10-09 07:55:07,233|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-09 07:55:07,268|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.pipelines.directPL
+2023-10-09 07:55:07,287|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-09 07:55:07,288|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:55:07,422|pipelite.pipelineProcess|ERROR|pipelite.pipelines.directPL.initialize()|Each pipeline objects must have a unique name in the configuration file
+2023-10-09 07:55:07,423|pipelite.pipelineProcess|ERROR|pipelite.pipelineProcess.execute()|Error when processing the data: The Data pipeline has not been initialized properly
+2023-10-09 07:55:56,930|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-09 07:55:56,961|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.pipelines.directPL
+2023-10-09 07:55:56,966|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-09 07:55:56,967|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:55:57,053|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|*** Starting pipeline processing ***
+2023-10-09 07:55:57,054|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Extractor(s) ...
+2023-10-09 07:55:57,080|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.extractors] objects(es)
+2023-10-09 07:55:57,082|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 07:55:57,083|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 07:55:57,106|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bprepoDS
+2023-10-09 07:55:57,107|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bprepoDS
+2023-10-09 07:55:57,629|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bprepoDS imported, instantiate the class
+2023-10-09 07:55:57,629|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:55:57,630|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bprepoDS
+2023-10-09 07:55:57,658|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bprepoDS initialized successfully
+2023-10-09 07:55:57,660|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 extractor(s)
+2023-10-09 07:55:57,661|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Loaders(s) ...
+2023-10-09 07:55:57,717|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.loaders] objects(es)
+2023-10-09 07:55:57,718|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 07:55:57,719|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 07:55:57,734|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bppiDS
+2023-10-09 07:55:57,735|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bppiDS
+2023-10-09 07:55:58,481|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bppiDS imported, instantiate the class
+2023-10-09 07:55:58,481|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:55:58,482|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bppiDS
+2023-10-09 07:55:58,503|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bppiDS initialized successfully
+2023-10-09 07:55:58,505|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 loader(s)
+2023-10-09 07:55:58,505|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Transformer(s) ...
+2023-10-09 07:55:58,551|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.transformers] objects(es)
+2023-10-09 07:55:58,553|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 07:55:58,553|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 07:55:58,577|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: transformers.renamedsTR
+2023-10-09 07:55:58,577|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> transformers.renamedsTR
+2023-10-09 07:55:58,580|pipelite.pipelineProcess|ERROR|pipelite.dpObject|Error when loading the Class: No module named 'transformers'
+2023-10-09 07:55:58,581|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: transformers.renamedsTR
+2023-10-09 07:55:58,584|pipelite.pipelineProcess|ERROR|pipelite.pipelines.directPL.__initETLObjects()|'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-09 07:55:58,585|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 0 Transformers(s)
+2023-10-09 07:55:58,586|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|pipelite has been initialized successfully
+2023-10-09 07:55:58,586|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- EXTRACT ---
+2023-10-09 07:55:58,587|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()|Extracting data from the Data Source S1
+2023-10-09 07:55:58,590|pipelite.pipelineProcess|ERROR|extends.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-09 07:55:58,599|pipelite.pipelineProcess|INFO|extends.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-09 07:55:58,602|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.bpQuery()|SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND processname IS NULL
+2023-10-09 07:55:58,610|pipelite.pipelineProcess|INFO|extends.bprepoDS.read_sql()|Connect to the ODBC Datasource ...
+2023-10-09 07:56:10,803|pipelite.pipelineProcess|INFO|extends.bprepoDS.read_sql()|Connected to ODBC Data source
+2023-10-09 07:56:10,806|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.read_sql()|Execute the query: 
+2023-10-09 07:56:11,937|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.read_sql()|Number of <1587> rows read in the ODBC Data Source
+2023-10-09 07:56:11,941|pipelite.pipelineProcess|WARNING|extends.bprepo.bpLogsProcessing.removeStartEndStages()|0 records have been removed (No <End> stage outside the Main Process Page)
+2023-10-09 07:56:11,944|pipelite.pipelineProcess|WARNING|extends.bprepo.bpLogsProcessing.removeStartEndStages()|196 records have been removed (No <Start> stage outside the Main Process Page)
+2023-10-09 07:56:11,945|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Extract the input and output parameters
+2023-10-09 07:56:13,577|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 485
+2023-10-09 07:56:13,578|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Filter out the desired parameters
+2023-10-09 07:56:13,587|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 58
+2023-10-09 07:56:13,588|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Build the final dataset with the desired parameters
+2023-10-09 07:56:13,668|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Adding 1 Blue Prism variables in the set
+2023-10-09 07:56:13,776|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.createStageID()|Adding Stage ID field: stageId
+2023-10-09 07:56:13,777|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.dropFields()|Removing 3 fieds
+2023-10-09 07:56:13,783|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()| <S1> Rows: 1391 | Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') 
+2023-10-09 07:56:13,784|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data extracted successfully
+2023-10-09 07:56:13,784|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- TRANSFORM ---
+2023-10-09 07:56:13,785|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data transformed successfully
+2023-10-09 07:56:13,786|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- LOAD ---
+2023-10-09 07:56:13,787|pipelite.pipelineProcess|WARNING|pipelite.pipelines.directPL.load()|There are no data to load into the Data Source S2
+2023-10-09 07:56:13,787|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data loaded successfully
+2023-10-09 07:56:13,879|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+   Name       Type               Description                Start                  End   Duration Rows Processed Order
+id                                                                                                                    
+S2   S2     Loader                                                                              0              0     0
+S1   S1  Extractor  bprepoDS -> Output: [S1]  2023-10-09 07:55:58  2023-10-09 07:56:13  15.194083           1391     1
+
+Total Duration 15.194083 sec
+
+ 
+2023-10-09 07:56:13,880|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|*** End of Job treatment ***
+2023-10-09 07:59:57,139|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-09 07:59:57,154|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.pipelines.directPL
+2023-10-09 07:59:57,157|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-09 07:59:57,157|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:59:57,195|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|*** Starting pipeline processing ***
+2023-10-09 07:59:57,196|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Extractor(s) ...
+2023-10-09 07:59:57,208|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.extractors] objects(es)
+2023-10-09 07:59:57,209|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 07:59:57,209|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 07:59:57,219|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bprepoDS
+2023-10-09 07:59:57,219|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bprepoDS
+2023-10-09 07:59:57,241|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bprepoDS imported, instantiate the class
+2023-10-09 07:59:57,242|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:59:57,243|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bprepoDS
+2023-10-09 07:59:57,258|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bprepoDS initialized successfully
+2023-10-09 07:59:57,259|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 extractor(s)
+2023-10-09 07:59:57,259|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Loaders(s) ...
+2023-10-09 07:59:57,294|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.loaders] objects(es)
+2023-10-09 07:59:57,295|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 07:59:57,295|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 07:59:57,303|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bppiDS
+2023-10-09 07:59:57,304|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bppiDS
+2023-10-09 07:59:57,431|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bppiDS imported, instantiate the class
+2023-10-09 07:59:57,432|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 07:59:57,433|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bppiDS
+2023-10-09 08:00:09,528|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bppiDS initialized successfully
+2023-10-09 08:00:09,530|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 loader(s)
+2023-10-09 08:00:09,531|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Transformer(s) ...
+2023-10-09 08:00:09,545|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.transformers] objects(es)
+2023-10-09 08:00:09,546|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:00:09,547|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:00:09,554|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: transformers.renamedsTR
+2023-10-09 08:00:09,555|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> transformers.renamedsTR
+2023-10-09 08:00:09,558|pipelite.pipelineProcess|ERROR|pipelite.dpObject|Error when loading the Class: No module named 'transformers'
+2023-10-09 08:00:09,558|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: transformers.renamedsTR
+2023-10-09 08:00:09,559|pipelite.pipelineProcess|ERROR|pipelite.pipelines.directPL.__initETLObjects()|'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-09 08:00:09,560|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 0 Transformers(s)
+2023-10-09 08:00:09,562|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|pipelite has been initialized successfully
+2023-10-09 08:00:09,562|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- EXTRACT ---
+2023-10-09 08:00:09,563|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()|Extracting data from the Data Source S1
+2023-10-09 08:00:12,221|pipelite.pipelineProcess|ERROR|extends.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-09 08:00:12,223|pipelite.pipelineProcess|INFO|extends.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-09 08:00:12,228|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.bpQuery()|SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND processname IS NULL
+2023-10-09 08:00:12,231|pipelite.pipelineProcess|INFO|extends.bprepoDS.read_sql()|Connect to the ODBC Datasource ...
+2023-10-09 08:00:12,375|pipelite.pipelineProcess|INFO|extends.bprepoDS.read_sql()|Connected to ODBC Data source
+2023-10-09 08:00:12,376|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.read_sql()|Execute the query: 
+2023-10-09 08:00:12,518|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.read_sql()|Number of <1587> rows read in the ODBC Data Source
+2023-10-09 08:00:14,907|pipelite.pipelineProcess|WARNING|extends.bprepo.bpLogsProcessing.removeStartEndStages()|0 records have been removed (No <End> stage outside the Main Process Page)
+2023-10-09 08:00:14,910|pipelite.pipelineProcess|WARNING|extends.bprepo.bpLogsProcessing.removeStartEndStages()|196 records have been removed (No <Start> stage outside the Main Process Page)
+2023-10-09 08:00:15,951|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Extract the input and output parameters
+2023-10-09 08:00:16,795|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 485
+2023-10-09 08:00:16,796|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Filter out the desired parameters
+2023-10-09 08:00:16,802|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 58
+2023-10-09 08:00:16,803|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Build the final dataset with the desired parameters
+2023-10-09 08:00:16,820|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Adding 1 Blue Prism variables in the set
+2023-10-09 08:00:18,095|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.createStageID()|Adding Stage ID field: stageId
+2023-10-09 08:00:18,096|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.dropFields()|Removing 3 fieds
+2023-10-09 08:00:18,100|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()| <S1> Rows: 1391 | Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') 
+2023-10-09 08:00:18,100|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data extracted successfully
+2023-10-09 08:00:18,101|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- TRANSFORM ---
+2023-10-09 08:00:18,101|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data transformed successfully
+2023-10-09 08:00:18,102|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- LOAD ---
+2023-10-09 08:00:18,102|pipelite.pipelineProcess|WARNING|pipelite.pipelines.directPL.load()|There are no data to load into the Data Source S2
+2023-10-09 08:00:18,102|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data loaded successfully
+2023-10-09 08:00:18,126|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+   Name       Type               Description                Start                  End  Duration Rows Processed Order
+id                                                                                                                   
+S2   S2     Loader                                                                             0              0     0
+S1   S1  Extractor  bprepoDS -> Output: [S1]  2023-10-09 08:00:09  2023-10-09 08:00:18  8.534983           1391     1
+
+Total Duration 8.534983 sec
+
+ 
+2023-10-09 08:00:18,127|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|*** End of Job treatment ***
+2023-10-09 08:00:49,470|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-09 08:00:49,498|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.pipelines.directPL
+2023-10-09 08:00:49,501|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-09 08:00:49,502|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:00:49,553|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|*** Starting pipeline processing ***
+2023-10-09 08:00:49,554|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Extractor(s) ...
+2023-10-09 08:00:49,573|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.extractors] objects(es)
+2023-10-09 08:00:49,574|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:00:49,575|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:00:49,586|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: pipelite.datasources.csvFileDS
+2023-10-09 08:00:49,586|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.datasources.csvFileDS
+2023-10-09 08:00:49,591|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.datasources.csvFileDS imported, instantiate the class
+2023-10-09 08:00:49,592|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:00:49,593|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: pipelite.datasources.csvFileDS
+2023-10-09 08:00:49,602|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object pipelite.datasources.csvFileDS initialized successfully
+2023-10-09 08:00:49,604|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 extractor(s)
+2023-10-09 08:00:49,605|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Loaders(s) ...
+2023-10-09 08:00:49,653|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.loaders] objects(es)
+2023-10-09 08:00:49,655|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:00:49,656|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:00:49,662|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bppiDS
+2023-10-09 08:00:49,663|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bppiDS
+2023-10-09 08:00:49,802|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bppiDS imported, instantiate the class
+2023-10-09 08:00:49,803|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:00:49,803|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bppiDS
+2023-10-09 08:00:53,051|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bppiDS initialized successfully
+2023-10-09 08:00:53,053|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 loader(s)
+2023-10-09 08:00:53,054|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Transformer(s) ...
+2023-10-09 08:00:53,072|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.transformers] objects(es)
+2023-10-09 08:00:53,073|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:00:53,073|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:00:53,083|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: transformers.renamedsTR
+2023-10-09 08:00:53,084|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> transformers.renamedsTR
+2023-10-09 08:00:53,086|pipelite.pipelineProcess|ERROR|pipelite.dpObject|Error when loading the Class: No module named 'transformers'
+2023-10-09 08:00:53,086|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: transformers.renamedsTR
+2023-10-09 08:00:53,087|pipelite.pipelineProcess|ERROR|pipelite.pipelines.directPL.__initETLObjects()|'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-09 08:00:53,087|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 0 Transformers(s)
+2023-10-09 08:00:53,089|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|pipelite has been initialized successfully
+2023-10-09 08:00:53,090|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- EXTRACT ---
+2023-10-09 08:00:53,092|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()|Extracting data from the Data Source S1
+2023-10-09 08:00:53,092|pipelite.pipelineProcess|INFO|pipelite.datasources.csvFileDS.read()|Extract the Dataset from the file: tests/data/a.csv
+2023-10-09 08:00:53,107|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()| <S1> Rows: 3 | Columns: Index(['col1', 'col2', 'col3'], dtype='object') 
+2023-10-09 08:00:53,108|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data extracted successfully
+2023-10-09 08:00:53,109|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- TRANSFORM ---
+2023-10-09 08:00:53,110|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data transformed successfully
+2023-10-09 08:00:53,110|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- LOAD ---
+2023-10-09 08:00:53,112|pipelite.pipelineProcess|WARNING|pipelite.pipelines.directPL.load()|There are no data to load into the Data Source S2
+2023-10-09 08:00:53,112|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data loaded successfully
+2023-10-09 08:00:53,151|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+   Name       Type                Description                Start                  End  Duration Rows Processed Order
+id                                                                                                                    
+S2   S2     Loader                                                                              0              0     0
+S1   S1  Extractor  csvFileDS -> Output: [S1]  2023-10-09 08:00:53  2023-10-09 08:00:53  0.013994              3     1
+
+Total Duration 0.013994 sec
+
+ 
+2023-10-09 08:00:53,152|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|*** End of Job treatment ***
+2023-10-09 08:04:04,915|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-09 08:04:04,929|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.pipelines.directPL
+2023-10-09 08:04:04,933|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-09 08:04:04,933|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:04:04,968|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|*** Starting pipeline processing ***
+2023-10-09 08:04:04,969|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Extractor(s) ...
+2023-10-09 08:04:04,982|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.extractors] objects(es)
+2023-10-09 08:04:04,982|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:04:04,983|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:04:04,991|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: pipelite.datasources.csvFileDS
+2023-10-09 08:04:04,992|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.datasources.csvFileDS
+2023-10-09 08:04:04,996|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.datasources.csvFileDS imported, instantiate the class
+2023-10-09 08:04:04,996|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:04:04,997|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: pipelite.datasources.csvFileDS
+2023-10-09 08:04:05,007|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object pipelite.datasources.csvFileDS initialized successfully
+2023-10-09 08:04:05,008|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 extractor(s)
+2023-10-09 08:04:05,009|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Loaders(s) ...
+2023-10-09 08:04:05,053|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.loaders] objects(es)
+2023-10-09 08:04:05,054|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:04:05,055|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:04:05,064|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bppiDS
+2023-10-09 08:04:05,065|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bppiDS
+2023-10-09 08:04:05,189|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bppiDS imported, instantiate the class
+2023-10-09 08:04:05,191|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:04:05,191|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bppiDS
+2023-10-09 08:04:05,197|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bppiDS initialized successfully
+2023-10-09 08:04:05,198|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 loader(s)
+2023-10-09 08:04:05,198|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Transformer(s) ...
+2023-10-09 08:04:05,214|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.transformers] objects(es)
+2023-10-09 08:04:05,215|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:04:05,215|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:04:05,224|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: transformers.renamedsTR
+2023-10-09 08:04:05,225|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> transformers.renamedsTR
+2023-10-09 08:04:05,226|pipelite.pipelineProcess|ERROR|pipelite.dpObject|Error when loading the Class: No module named 'transformers'
+2023-10-09 08:04:05,227|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: transformers.renamedsTR
+2023-10-09 08:04:05,228|pipelite.pipelineProcess|ERROR|pipelite.pipelines.directPL.__initETLObjects()|'NoneType' object has no attribute 'parametersValidationFile'
+2023-10-09 08:04:05,228|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 0 Transformers(s)
+2023-10-09 08:04:05,229|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|pipelite has been initialized successfully
+2023-10-09 08:04:05,230|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- EXTRACT ---
+2023-10-09 08:04:05,230|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()|Extracting data from the Data Source S1
+2023-10-09 08:04:05,231|pipelite.pipelineProcess|INFO|pipelite.datasources.csvFileDS.read()|Extract the Dataset from the file: tests/data/a.csv
+2023-10-09 08:04:05,239|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()| <S1> Rows: 3 | Columns: Index(['col1', 'col2', 'col3'], dtype='object') 
+2023-10-09 08:04:05,240|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data extracted successfully
+2023-10-09 08:04:05,241|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- TRANSFORM ---
+2023-10-09 08:04:05,242|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data transformed successfully
+2023-10-09 08:04:05,242|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- LOAD ---
+2023-10-09 08:04:05,243|pipelite.pipelineProcess|WARNING|pipelite.pipelines.directPL.load()|There are no data to load into the Data Source S2
+2023-10-09 08:04:05,244|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data loaded successfully
+2023-10-09 08:04:05,274|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+   Name       Type                Description                Start                  End  Duration Rows Processed Order
+id                                                                                                                    
+S2   S2     Loader                                                                              0              0     0
+S1   S1  Extractor  csvFileDS -> Output: [S1]  2023-10-09 08:04:05  2023-10-09 08:04:05  0.007076              3     1
+
+Total Duration 0.007076 sec
+
+ 
+2023-10-09 08:04:05,275|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|*** End of Job treatment ***
+2023-10-09 08:05:47,964|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-09 08:05:47,991|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.pipelines.directPL
+2023-10-09 08:05:47,995|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.pipelines.directPL imported, instantiate the class
+2023-10-09 08:05:47,997|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:05:48,087|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|*** Starting pipeline processing ***
+2023-10-09 08:05:48,090|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Extractor(s) ...
+2023-10-09 08:05:48,132|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.extractors] objects(es)
+2023-10-09 08:05:48,142|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:05:48,148|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:05:48,175|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bprepoDS
+2023-10-09 08:05:48,177|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bprepoDS
+2023-10-09 08:05:48,218|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bprepoDS imported, instantiate the class
+2023-10-09 08:05:48,219|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:05:48,220|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bprepoDS
+2023-10-09 08:05:48,243|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bprepoDS initialized successfully
+2023-10-09 08:05:48,244|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 extractor(s)
+2023-10-09 08:05:48,245|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Loaders(s) ...
+2023-10-09 08:05:48,312|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.loaders] objects(es)
+2023-10-09 08:05:48,313|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:05:48,314|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:05:48,328|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: extends.bppiDS
+2023-10-09 08:05:48,329|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> extends.bppiDS
+2023-10-09 08:05:48,571|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module extends.bppiDS imported, instantiate the class
+2023-10-09 08:05:48,572|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:05:48,574|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: extends.bppiDS
+2023-10-09 08:05:48,591|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object extends.bppiDS initialized successfully
+2023-10-09 08:05:48,592|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 loader(s)
+2023-10-09 08:05:48,593|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|Initializing Transformer(s) ...
+2023-10-09 08:05:48,626|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|There is/are 1 [$.transformers] objects(es)
+2023-10-09 08:05:48,627|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Intantiate needs and configured objects ...
+2023-10-09 08:05:48,628|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Validate and initialize Object...
+2023-10-09 08:05:48,645|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initETLObjects()|Instantiate Object: pipelite.transformers.renamedsTR
+2023-10-09 08:05:48,646|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Import module -> pipelite.transformers.renamedsTR
+2023-10-09 08:05:48,654|pipelite.pipelineProcess|DEBUG|pipelite.dpObject|Module pipelite.transformers.renamedsTR imported, instantiate the class
+2023-10-09 08:05:48,655|pipelite.pipelineProcess|INFO|pipelite.dpObject|Class instantiated successfully
+2023-10-09 08:05:48,656|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|Initialize Object: pipelite.transformers.renamedsTR
+2023-10-09 08:05:48,657|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.directPL.__initETLObjects()|ETL Object pipelite.transformers.renamedsTR initialized successfully
+2023-10-09 08:05:48,660|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.__initAllETLObjects()|There is/are 1 Transformers(s)
+2023-10-09 08:05:48,660|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|pipelite has been initialized successfully
+2023-10-09 08:05:48,661|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- EXTRACT ---
+2023-10-09 08:05:48,662|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()|Extracting data from the Data Source S1
+2023-10-09 08:05:48,664|pipelite.pipelineProcess|ERROR|extends.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-09 08:05:48,667|pipelite.pipelineProcess|INFO|extends.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-09 08:05:48,671|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.bpQuery()|SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND processname IS NULL
+2023-10-09 08:05:48,677|pipelite.pipelineProcess|INFO|extends.bprepoDS.read_sql()|Connect to the ODBC Datasource ...
+2023-10-09 08:05:48,864|pipelite.pipelineProcess|INFO|extends.bprepoDS.read_sql()|Connected to ODBC Data source
+2023-10-09 08:05:48,865|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.read_sql()|Execute the query: 
+2023-10-09 08:05:49,075|pipelite.pipelineProcess|DEBUG|extends.bprepoDS.read_sql()|Number of <1587> rows read in the ODBC Data Source
+2023-10-09 08:05:49,082|pipelite.pipelineProcess|WARNING|extends.bprepo.bpLogsProcessing.removeStartEndStages()|0 records have been removed (No <End> stage outside the Main Process Page)
+2023-10-09 08:05:49,088|pipelite.pipelineProcess|WARNING|extends.bprepo.bpLogsProcessing.removeStartEndStages()|196 records have been removed (No <Start> stage outside the Main Process Page)
+2023-10-09 08:05:49,090|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Extract the input and output parameters
+2023-10-09 08:05:51,030|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 485
+2023-10-09 08:05:51,030|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Filter out the desired parameters
+2023-10-09 08:05:51,037|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 58
+2023-10-09 08:05:51,038|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Build the final dataset with the desired parameters
+2023-10-09 08:05:51,068|pipelite.pipelineProcess|INFO|extends.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Adding 1 Blue Prism variables in the set
+2023-10-09 08:05:51,234|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.createStageID()|Adding Stage ID field: stageId
+2023-10-09 08:05:51,235|pipelite.pipelineProcess|DEBUG|extends.bprepo.bpLogsProcessing.dropFields()|Removing 3 fieds
+2023-10-09 08:05:51,242|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.extract()| <S1> Rows: 1391 | Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') 
+2023-10-09 08:05:51,243|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data extracted successfully
+2023-10-09 08:05:51,244|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- TRANSFORM ---
+2023-10-09 08:05:51,245|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.transform()|Number of rows processed 1391 by T2
+2023-10-09 08:05:51,246|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data transformed successfully
+2023-10-09 08:05:51,246|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|--- LOAD ---
+2023-10-09 08:05:51,248|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.load()|Loading content to the Data Source S2
+2023-10-09 08:05:55,137|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Get Api call for getting Repository informations ...
+2023-10-09 08:05:55,139|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - HTTP GET Request sent: https://bp-staging.timelinepi.com/api/ext/1.0/repository/repository-import-configuration
+2023-10-09 08:05:55,832|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Informations from BPPI Repository collected successfully
+2023-10-09 08:05:55,833|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.load()|Upload the data into the BPPI repository in one transaction
+2023-10-09 08:05:55,834|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiRepository.load()|The data can be uploaded in one unique bloc
+2023-10-09 08:05:55,835|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Get the Server info for upload ...
+2023-10-09 08:05:55,836|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/file/upload-url
+2023-10-09 08:05:55,837|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Data sent: b'{"fileName": "timeline.csv"}'
+2023-10-09 08:05:56,303|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Upload prepared successfully
+2023-10-09 08:05:56,348|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - Upload CSV formatted data to the BPPI Server
+2023-10-09 08:05:56,349|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP PUT Request https://bp-staging.timelinepi.com/timelinepi-repositories-bp-staging/etl/repository/20/1696831552752/timeline.csv?Expires=1696832752&Key-Pair-Id=APKAJJOKFFMHWCD6WJ7Q&Signature=StnounbFWr3ILEVR6aQET-kR5ELjahqwQLqQOJQIjchmJp3y2EKnUu68ROR2VvISrUKvnkniOtoppf-WoOSOzBS9VoDQhUdmoquobLzX4WT0vcxL0IypzdzyNwoQqTJ-4vzT6n5bVAjZk1hcQ5PLd0LEM64g~Jdflls13WIl4GXwWt0UfGnsAkXr5mOKISm-hiS~GujZrtsfla1yiFDkSASDekTXAHhPXY165W--s9YaB464kndoytRz2q2Sa3tyf2dygvpW8Tbhld6shJgyWZdLtLKWhZA07qi9zlkwC4bv-pzjXR-FGIoqTgnJI8zXfCMoWsxy6tcZbHnZCu9Y4w__
+2023-10-09 08:05:57,374|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP Response <Response [200]>
+2023-10-09 08:05:57,378|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.load()|Data was uploaded successfully
+2023-10-09 08:05:57,379|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.load()|Load the uploaded data/bloc(s) into the BPPI repository table pipelite
+2023-10-09 08:05:57,380|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Load the file to the BPPI repository
+2023-10-09 08:05:57,381|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/load
+2023-10-09 08:05:57,382|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|HTTP POST Data sent: b'{"fileKeys": ["repository/20/1696831552752/timeline.csv"], "tableName": "pipelite"}'
+2023-10-09 08:06:06,037|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP Response {'processingId': 'Y8z5zjn_ssSC6D43bKkjRA'}
+2023-10-09 08:06:06,038|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Loading the file with process ID Y8z5zjn_ssSC6D43bKkjRA 
+2023-10-09 08:06:06,039|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-09 08:06:06,040|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task Y8z5zjn_ssSC6D43bKkjRA
+2023-10-09 08:06:06,041|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/Y8z5zjn_ssSC6D43bKkjRA
+2023-10-09 08:06:06,208|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"Y8z5zjn_ssSC6D43bKkjRA","status":"IN_PROGRESS","subResults":[{"type":"S3_MIGRATION","status":"IN_PROGRESS"}]}'
+2023-10-09 08:06:06,209|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task Y8z5zjn_ssSC6D43bKkjRA status is IN_PROGRESS 
+2023-10-09 08:06:08,221|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task Y8z5zjn_ssSC6D43bKkjRA
+2023-10-09 08:06:08,222|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/Y8z5zjn_ssSC6D43bKkjRA
+2023-10-09 08:06:08,648|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"Y8z5zjn_ssSC6D43bKkjRA","status":"FINISHED","subResults":[{"type":"S3_MIGRATION","status":"FINISHED"}]}'
+2023-10-09 08:06:08,649|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task Y8z5zjn_ssSC6D43bKkjRA status is FINISHED 
+2023-10-09 08:06:10,666|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.executeToDo()|Execute these TO DO: pipelite_todo
+2023-10-09 08:06:10,667|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Execute a To Do in BPPI repository
+2023-10-09 08:06:10,669|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.executeTODO()|bBPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/execute-todo-list
+2023-10-09 08:06:10,670|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP POST Data sent: b'{"todoListNames": ["pipelite_todo"], "tableName": "pipelite"}'
+2023-10-09 08:06:18,411|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP Response {'processingId': '3rd00TaSs3u7bRjFxevVng'}
+2023-10-09 08:06:18,411|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Loading the file with process ID: 3rd00TaSs3u7bRjFxevVng
+2023-10-09 08:06:18,412|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-09 08:06:18,413|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task 3rd00TaSs3u7bRjFxevVng
+2023-10-09 08:06:18,414|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/3rd00TaSs3u7bRjFxevVng
+2023-10-09 08:06:18,569|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"3rd00TaSs3u7bRjFxevVng","status":"IN_PROGRESS","subResults":[{"type":"OPERATION","status":"IN_PROGRESS"}]}'
+2023-10-09 08:06:18,569|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task 3rd00TaSs3u7bRjFxevVng status is IN_PROGRESS 
+2023-10-09 08:06:20,587|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task 3rd00TaSs3u7bRjFxevVng
+2023-10-09 08:06:20,588|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/3rd00TaSs3u7bRjFxevVng
+2023-10-09 08:06:20,743|pipelite.pipelineProcess|DEBUG|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"3rd00TaSs3u7bRjFxevVng","status":"FINISHED","subResults":[{"type":"OPERATION","status":"FINISHED"}]}'
+2023-10-09 08:06:20,744|pipelite.pipelineProcess|INFO|extends.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task 3rd00TaSs3u7bRjFxevVng status is FINISHED 
+2023-10-09 08:06:22,750|pipelite.pipelineProcess|INFO|extends.bppi.bppiRepository.executeToDo()|To Do executed successfully
+2023-10-09 08:06:22,757|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.load()| S2 (1391,Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object')) Rows/Columns:  
+2023-10-09 08:06:22,758|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.execute()|Data loaded successfully
+2023-10-09 08:06:22,806|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+   Name         Type                                 Description                Start                  End   Duration Rows Processed Order
+id                                                                                                                                        
+S1   S1    Extractor                    bprepoDS -> Output: [S1]  2023-10-09 08:05:48  2023-10-09 08:05:51   2.577589           1391     1
+T2   T2  Transformer  renamedsTR -> Inputs: [S1] / Outputs: [S2]  2023-10-09 08:05:51  2023-10-09 08:05:51        0.0           1391     2
+S2   S2       Loader                       bppiDS -> Input: [S2]  2023-10-09 08:05:51  2023-10-09 08:06:22  31.506682           1391     3
+
+Total Duration 34.084271 sec
+
+ 
+2023-10-09 08:06:22,807|pipelite.pipelineProcess|INFO|pipelite.pipelines.directPL.terminate()|*** End of Job treatment ***
