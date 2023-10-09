@@ -1,0 +1,38 @@
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipelite"
+version = "0.1"
+authors = [
+  { name="datacorner", email="admin@datacorner.fr" },
+]
+description = "This solution acts as a Data Bridge between external Data sources and Blue Prism Process Intelligence (BPPI)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+"pipelite"
+]
+
+[project.scripts]
+bppidatabridge = "bppidatabridge:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]

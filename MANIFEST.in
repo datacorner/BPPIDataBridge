@@ -1,0 +1,2 @@
+include src/bppidb/config/parameters/datasources/*.json
+include src/bppidb/config/bprepo.sql

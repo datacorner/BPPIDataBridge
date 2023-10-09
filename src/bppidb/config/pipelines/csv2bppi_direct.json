@@ -1,0 +1,42 @@
+{
+    "classname" : "pipelite.pipelines.directPL",
+    "extractors" : [ {
+        "name": "S1",
+        "classname": "pipelite.datasources.csvFileDS",
+        "parameters": {
+            "separator": ",",
+            "filename": "a.csv",
+            "path": "tests/data/",
+            "encoding": "utf-8"
+        }   
+    } ],
+    "loaders" : [ {
+        "name": "S2",
+        "classname": "bppidb.bppiDS",
+        "parameters": {
+            "server": "https://bp-staging.timelinepi.com",
+            "token": "cmVwb3NpdG9yeTpTZVp6czkyVnNsNmtsOTluRy1IZTNCTHNReHl1OEQ5Wkw4Yy1FTjJqZW16VkxhNGpyZkRUTVZGZklYV3JkNDIyQVlxMGV6OENkMThERnZXb01MZHR4dw==",
+            "table": "pipelite",
+            "todos": [ "pipelite_todo" ]
+        }
+    } ],
+    "transformers":  [
+    { 
+        "name": "T",
+        "classname": "pipelite.transformers.renamedsTR",
+        "inputs" : [ "S1" ],
+        "outputs" : [ "S2" ]
+    } ],
+    "parameters":{
+        "mode": "full"
+    },
+    "config": {
+        "logger" : {
+            "level": "DEBUG",
+            "format" : "%(asctime)s|%(name)s|%(levelname)s|%(message)s",
+            "path": "logs/",
+            "filename" : "pipe_csv2csv.log",
+            "maxbytes" : 1000000
+        }
+    }
+} 
