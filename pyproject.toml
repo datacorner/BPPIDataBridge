@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [project.scripts]
-bppidatabridge = "bppidatabridge:main"
+bppidatabridge = "bppidb:main"
 
 [tool.setuptools]
 include-package-data = true
