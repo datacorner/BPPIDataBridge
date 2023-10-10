@@ -21,6 +21,15 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": ["-cfg", "./src/bppidb/config/pipelines/bprepo2bppi_direct.json"]
+        },
+        {
+            "name": "BP API 2 BPPI - Direct",
+            "type": "python",
+            "request": "launch",
+            "program": "src/bppidatabridge.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["-cfg", "./src/bppidb/config/pipelines/bpapi2bppi_direct.json"]
         }
     ]
 }

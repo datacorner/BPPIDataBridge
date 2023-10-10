@@ -11,7 +11,7 @@ CFGPARAMS_SERVER = "server"
 CFGPARAMS_TOKEN = "token"
 CFGPARAMS_TABLE = "table"
 CFGPARAMS_TODOS = "todos"
-DS_JSON_VALIDATION_PKGLOC = "bppidatabridge." + C.RESOURCE_PKGFOLDER_DATASOURCES
+DS_JSON_VALIDATION_PKGLOC = "bppidb." + C.RESOURCE_PKGFOLDER_DATASOURCES
 
 class bppiDS(IDataSource):
     def __init__(self, config, log):

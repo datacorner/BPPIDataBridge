@@ -1,0 +1,16 @@
+{
+    "$id": "https://example.com/person.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Blue Prism Repository Connection Parameters",
+    "type" : "object",
+    "properties" : { 
+          "url-auth": {"type" : "string"},
+          "ssl": {"type" : "boolean"},
+          "pagesize": {"type" : "number"},
+          "client-id": {"type" : "string"},
+          "client-secret": {"type" : "string"},
+          "url-api": {"type" : "string"},
+          "processname": {"type" : "string"}
+          },
+    "required": ["url-auth", "client-id", "client-secret", "url-api", "processname"]
+}

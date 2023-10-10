@@ -1,0 +1,45 @@
+{
+    "classname" : "pipelite.pipelines.directPL",
+    "extractors" : [ {
+        "name": "S1",
+        "classname": "bppidb.bpapiDS",
+        "parameters": {
+            "url-auth": "https://authentication.local",
+            "ssl": false,
+            "pagesize": 200,
+            "client-id": "bpapi",
+            "client-secret" : "L13vyjb/+Lo3wzsoAsYihgXfpIupun9YWPt134sT2J4=",
+            "url-api": "https://bpapi.local",
+            "processname": "Load Customers Queue"
+        }   
+    } ],
+    "loaders" : [ {
+        "name": "S2",
+        "classname": "bppidb.bppiDS",
+        "parameters": {
+            "server": "https://bp-staging.timelinepi.com",
+            "token": "cmVwb3NpdG9yeTpTZVp6czkyVnNsNmtsOTluRy1IZTNCTHNReHl1OEQ5Wkw4Yy1FTjJqZW16VkxhNGpyZkRUTVZGZklYV3JkNDIyQVlxMGV6OENkMThERnZXb01MZHR4dw==",
+            "table": "pipelite",
+            "todos": [ "pipelite_todo" ]
+        }   
+    } ],
+    "transformers":  [
+    { 
+        "name": "T2",
+        "classname": "pipelite.transformers.renamedsTR",
+        "inputs" : [ "S1" ],
+        "outputs" : [ "S2" ]
+    } ],
+    "parameters":{
+        "mode": "full"
+    },
+    "config": {
+        "logger" : {
+            "level": "DEBUG",
+            "format" : "%(asctime)s|%(name)s|%(levelname)s|%(message)s",
+            "path": "logs/",
+            "filename" : "pipe_csv2csv.log",
+            "maxbytes" : 1000000
+        }
+    }
+} 
