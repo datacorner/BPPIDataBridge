@@ -7,7 +7,7 @@ import importlib.resources
 
 from pipelite.datasources.odbcDS import odbcDS 
 import pipelite.constants as P
-from pipelite.etlDataset import etlDataset
+from pipelite.plDataset import plDataset
 
 from bppidb.bprepo.blueprismSQLBuilder import blueprismSQLBuilder
 from bppidb.bprepo.bpLogsProcessing import bpLogsProcessing
@@ -110,7 +110,7 @@ class bprepoDS(odbcDS):
             self.log.error("Unable to build the Blue Prism Query " + str(e))
             return C.EMPTY
 
-    def read(self) -> etlDataset:
+    def read(self) -> plDataset:
         """ Returns all the data in a DataFrame format
         Returns:
             pd.DataFrame(): dataset read
@@ -130,7 +130,7 @@ class bprepoDS(odbcDS):
             # drop working or obsolete fields
             logs.dropFields([C.COL_OBJECT_TAB, C.BPLOG_OBJTYPE_COL, C.BPLOG_OBJNAME_COL])
 
-            newLogs = etlDataset()
+            newLogs = plDataset()
             newLogs.set(logs.content)
 
         # Update the date for the next delta load

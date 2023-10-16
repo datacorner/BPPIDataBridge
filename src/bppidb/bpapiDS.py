@@ -8,8 +8,8 @@ import pandas as pd
 import requests 
 import urllib.parse
 import warnings
-from pipelite.interfaces.IDataSource import IDataSource 
-from pipelite.etlDataset import etlDataset
+from pipelite.baseobjs.BODataSource import BODataSource 
+from pipelite.plDataset import plDataset
 
 # BLUE PRISM API
 PBAPI_VER = "/api/v7"
@@ -34,7 +34,7 @@ AUTH_TOKEN_SUFFIX_URL = "/connect/token"
 
 warnings.filterwarnings('ignore')
 
-class bpAPIExtractor(IDataSource):
+class bpAPIExtractor(BODataSource):
 
     @property
     def parametersValidationFile(self):
@@ -213,7 +213,7 @@ class bpAPIExtractor(IDataSource):
         api_response = requests.get(api_endpoint, headers=headers, verify=ssl_verification)
         return api_response.json()
 
-    def read(self) -> etlDataset:
+    def read(self) -> plDataset:
         """ Returns all the BP Repository data in a df
         Returns:
             bool: False is any trouble when reading
@@ -222,7 +222,7 @@ class bpAPIExtractor(IDataSource):
             access_token = self.__getAccessToken()
             if (access_token != None):
                 sessionIDList = self.__getSessionIDList(access_token)
-                logs = etlDataset()
+                logs = plDataset()
                 # Aggregate the logs from all the sessions
                 for session in sessionIDList:
                     self.log.debug("BP API - Collect logs from session {} ...".format(session))
@@ -239,4 +239,4 @@ class bpAPIExtractor(IDataSource):
         
         except Exception as e:
             self.log.error("bpAPIReader.read() Error: " + str(e))
-            return etlDataset()
+            return plDataset()

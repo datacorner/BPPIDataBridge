@@ -1,7 +1,7 @@
 {
-    "classname" : "pipelite.pipelines.directPL",
+    "classname" : "pipelite.pipelines.sequentialPL",
     "extractors" : [ {
-        "name": "S1",
+        "id": "S1",
         "classname": "bppidb.bprepoDS",
         "parameters": {
             "connectionstring": "DRIVER={ODBC Driver 18 for SQL Server};SERVER=localhost\\SQLEXPRESS;DATABASE=blueprism;UID=sa;PWD=sa123@;ENCRYPT=No",
@@ -14,7 +14,7 @@
         }   
     } ],
     "loaders" : [ {
-        "name": "S2",
+        "id": "S2",
         "classname": "bppidb.bppiDS",
         "parameters": {
             "server": "https://bp-staging.timelinepi.com",
@@ -25,8 +25,8 @@
     } ],
     "transformers":  [
     { 
-        "name": "T2",
-        "classname": "pipelite.transformers.renamedsTR",
+        "id": "T2",
+        "classname": "pipelite.transformers.passthroughTR",
         "inputs" : [ "S1" ],
         "outputs" : [ "S2" ]
     } ],

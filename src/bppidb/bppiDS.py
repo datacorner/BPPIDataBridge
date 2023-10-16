@@ -2,7 +2,7 @@ __author__ = "datacorner.fr"
 __email__ = "admin@datacorner.fr"
 __license__ = "MIT"
 
-from pipelite.interfaces.IDataSource import IDataSource 
+from pipelite.baseobjs.BODataSource import BODataSource 
 import pipelite.constants as C
 from bppidb.bppi.bppiRepository import bppiRepository
 
@@ -13,7 +13,7 @@ CFGPARAMS_TABLE = "table"
 CFGPARAMS_TODOS = "todos"
 DS_JSON_VALIDATION_PKGLOC = "bppidb." + C.RESOURCE_PKGFOLDER_DATASOURCES
 
-class bppiDS(IDataSource):
+class bppiDS(BODataSource):
     def __init__(self, config, log):
         super().__init__(config, log)
 
