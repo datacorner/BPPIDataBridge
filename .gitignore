@@ -1,3 +1,5 @@
 .venv_BPPIDataBridge/*
 src/extends/bppi/bppiRepository.py
 src/bppidatabridge.egg-info/*.*
+logs/pipe_csv2csv.log
+delta.tag

@@ -5711,3 +5711,488 @@ Total Duration 32.689997 sec
 
  
 2023-10-16 12:08:09,947|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|*** End of Job treatment ***
+2023-10-16 16:46:08,993|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-16 16:46:09,007|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.pipelines.sequentialPL
+2023-10-16 16:46:09,011|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.pipelines.sequentialPL imported, instantiate the class
+2023-10-16 16:46:09,012|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-16 16:46:09,057|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.extractors] objects(es)
+2023-10-16 16:46:09,058|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-16 16:46:09,058|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-16 16:46:09,067|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bprepoDS
+2023-10-16 16:46:09,068|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bprepoDS
+2023-10-16 16:46:09,106|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bprepoDS imported, instantiate the class
+2023-10-16 16:46:09,107|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-16 16:46:09,107|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bprepoDS
+2023-10-16 16:46:09,118|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bprepoDS instantiated and initialized successfully
+2023-10-16 16:46:09,133|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.loaders] objects(es)
+2023-10-16 16:46:09,133|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-16 16:46:09,134|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-16 16:46:09,139|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bppiDS
+2023-10-16 16:46:09,140|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bppiDS
+2023-10-16 16:46:09,309|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bppiDS imported, instantiate the class
+2023-10-16 16:46:09,309|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-16 16:46:09,310|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bppiDS
+2023-10-16 16:46:09,316|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bppiDS instantiated and initialized successfully
+2023-10-16 16:46:09,331|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.transformers] objects(es)
+2023-10-16 16:46:09,332|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-16 16:46:09,332|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-16 16:46:09,337|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: pipelite.transformers.passthroughTR
+2023-10-16 16:46:09,338|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.transformers.passthroughTR
+2023-10-16 16:46:09,342|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.transformers.passthroughTR imported, instantiate the class
+2023-10-16 16:46:09,344|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-16 16:46:09,344|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: pipelite.transformers.passthroughTR
+2023-10-16 16:46:09,346|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object pipelite.transformers.passthroughTR instantiated and initialized successfully
+2023-10-16 16:46:09,346|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.prepare()|Pipeline preparation
+2023-10-16 16:46:09,347|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.prepare()|Pipeline prepared successfully, execution in this order: [S1 -> S2]
+2023-10-16 16:46:09,348|pipelite.pipelineProcess|ERROR|bppidb.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-16 16:46:09,353|pipelite.pipelineProcess|INFO|bppidb.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-16 16:46:09,373|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.bpQuery()|SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND processname IS NULL
+2023-10-16 16:46:09,379|pipelite.pipelineProcess|INFO|bppidb.bprepoDS.read_sql()|Connect to the ODBC Datasource ...
+2023-10-16 16:46:09,523|pipelite.pipelineProcess|INFO|bppidb.bprepoDS.read_sql()|Connected to ODBC Data source
+2023-10-16 16:46:09,524|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.read_sql()|Execute the query: 
+2023-10-16 16:46:09,759|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.read_sql()|Number of <1587> rows read in the ODBC Data Source
+2023-10-16 16:46:09,763|pipelite.pipelineProcess|WARNING|bppidb.bprepo.bpLogsProcessing.removeStartEndStages()|0 records have been removed (No <End> stage outside the Main Process Page)
+2023-10-16 16:46:09,768|pipelite.pipelineProcess|WARNING|bppidb.bprepo.bpLogsProcessing.removeStartEndStages()|196 records have been removed (No <Start> stage outside the Main Process Page)
+2023-10-16 16:46:09,768|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Extract the input and output parameters
+2023-10-16 16:46:10,604|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 485
+2023-10-16 16:46:10,604|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Filter out the desired parameters
+2023-10-16 16:46:10,611|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 58
+2023-10-16 16:46:10,612|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Build the final dataset with the desired parameters
+2023-10-16 16:46:10,637|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Adding 1 Blue Prism variables in the set
+2023-10-16 16:46:10,700|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.createStageID()|Adding Stage ID field: stageId
+2023-10-16 16:46:10,701|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.dropFields()|Removing 3 fieds
+2023-10-16 16:46:10,704|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ EXTRACT S1 - Rows: 1391 - Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') ]
+2023-10-16 16:46:10,705|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ TRANSFORM T2 - Rows: 1391 ]
+2023-10-16 16:46:10,706|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|Number of rows processed 1391 by T2
+2023-10-16 16:46:10,707|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Get Api call for getting Repository informations ...
+2023-10-16 16:46:10,708|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - HTTP GET Request sent: https://bp-staging.timelinepi.com/api/ext/1.0/repository/repository-import-configuration
+2023-10-16 16:46:11,358|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Informations from BPPI Repository collected successfully
+2023-10-16 16:46:11,360|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Upload the data into the BPPI repository in one transaction
+2023-10-16 16:46:11,361|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiRepository.load()|The data can be uploaded in one unique bloc
+2023-10-16 16:46:11,363|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Get the Server info for upload ...
+2023-10-16 16:46:11,364|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/file/upload-url
+2023-10-16 16:46:11,367|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Data sent: b'{"fileName": "timeline.csv"}'
+2023-10-16 16:46:11,838|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Upload prepared successfully
+2023-10-16 16:46:11,864|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - Upload CSV formatted data to the BPPI Server
+2023-10-16 16:46:11,865|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP PUT Request https://bp-staging.timelinepi.com/timelinepi-repositories-bp-staging/etl/repository/20/1697467568676/timeline.csv?Expires=1697468768&Key-Pair-Id=APKAJJOKFFMHWCD6WJ7Q&Signature=YS31LKCvwguczCk4PsArc75H-KtWAtwmpx9BKJCs7pA1CC2lY5nmHW2yiacLRN6DxazTMxjvCRLnMcC2OyF7K2MFfH~a1qDntDp7D3UWrNBIX5w9XetY47XmmJIdA03kvBdBWOmUpUIEFv3-QbocHIPPgihKat3Fr80aRU7tzJitLR7X5zxMOBHQBwGcF2dS7yJK7Eq1xdmEfCD1DneCh4HUuiNGzU4rJ~mEDXHNA0qAN~EOQkDIY9y9GFEop1o-qkeLUj3Do5NAclvUPJaAO1d90rVyMl9~ZxUj-n5NglXB1DKi97u9J4MlkKKoeX79KHKi4th509CXAIZAbnbmSQ__
+2023-10-16 16:46:12,862|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP Response <Response [200]>
+2023-10-16 16:46:12,865|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Data was uploaded successfully
+2023-10-16 16:46:12,866|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Load the uploaded data/bloc(s) into the BPPI repository table pipelite
+2023-10-16 16:46:12,867|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Load the file to the BPPI repository
+2023-10-16 16:46:12,869|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/load
+2023-10-16 16:46:12,870|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|HTTP POST Data sent: b'{"fileKeys": ["repository/20/1697467568676/timeline.csv"], "tableName": "pipelite"}'
+2023-10-16 16:46:19,570|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP Response {'processingId': 'Aadg_yHR4zoUtpLM1-zRkQ'}
+2023-10-16 16:46:19,572|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Loading the file with process ID Aadg_yHR4zoUtpLM1-zRkQ 
+2023-10-16 16:46:19,574|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-16 16:46:19,576|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task Aadg_yHR4zoUtpLM1-zRkQ
+2023-10-16 16:46:19,577|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/Aadg_yHR4zoUtpLM1-zRkQ
+2023-10-16 16:46:19,733|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"Aadg_yHR4zoUtpLM1-zRkQ","status":"IN_PROGRESS","subResults":[{"type":"S3_MIGRATION","status":"IN_PROGRESS"}]}'
+2023-10-16 16:46:19,735|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task Aadg_yHR4zoUtpLM1-zRkQ status is IN_PROGRESS 
+2023-10-16 16:46:21,747|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task Aadg_yHR4zoUtpLM1-zRkQ
+2023-10-16 16:46:21,749|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/Aadg_yHR4zoUtpLM1-zRkQ
+2023-10-16 16:46:21,924|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"Aadg_yHR4zoUtpLM1-zRkQ","status":"FINISHED","subResults":[{"type":"S3_MIGRATION","status":"FINISHED"}]}'
+2023-10-16 16:46:21,926|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task Aadg_yHR4zoUtpLM1-zRkQ status is FINISHED 
+2023-10-16 16:46:23,946|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.executeToDo()|Execute these TO DO: pipelite_todo
+2023-10-16 16:46:23,948|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Execute a To Do in BPPI repository
+2023-10-16 16:46:23,949|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|bBPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/execute-todo-list
+2023-10-16 16:46:23,950|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP POST Data sent: b'{"todoListNames": ["pipelite_todo"], "tableName": "pipelite"}'
+2023-10-16 16:46:30,592|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP Response {'processingId': 'MIWL0u9zgTVqQsrlmswo6Q'}
+2023-10-16 16:46:30,594|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Loading the file with process ID: MIWL0u9zgTVqQsrlmswo6Q
+2023-10-16 16:46:30,596|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-16 16:46:30,597|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task MIWL0u9zgTVqQsrlmswo6Q
+2023-10-16 16:46:30,598|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/MIWL0u9zgTVqQsrlmswo6Q
+2023-10-16 16:46:30,768|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"MIWL0u9zgTVqQsrlmswo6Q","status":"IN_PROGRESS","subResults":[{"type":"OPERATION","status":"IN_PROGRESS"}]}'
+2023-10-16 16:46:30,770|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task MIWL0u9zgTVqQsrlmswo6Q status is IN_PROGRESS 
+2023-10-16 16:46:32,785|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task MIWL0u9zgTVqQsrlmswo6Q
+2023-10-16 16:46:32,786|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/MIWL0u9zgTVqQsrlmswo6Q
+2023-10-16 16:46:32,988|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"MIWL0u9zgTVqQsrlmswo6Q","status":"FINISHED","subResults":[{"type":"OPERATION","status":"FINISHED"}]}'
+2023-10-16 16:46:32,990|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task MIWL0u9zgTVqQsrlmswo6Q status is FINISHED 
+2023-10-16 16:46:35,000|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.executeToDo()|To Do executed successfully
+2023-10-16 16:46:35,006|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ LOAD S2 - Rows: 1391 - Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') ]
+2023-10-16 16:46:35,055|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+           Type                                    Description                Start                  End   Duration Rows Processed Order
+id                                                                                                                                      
+S1    Extractor                       bprepoDS -> Output: [S1]  2023-10-16 16:46:09  2023-10-16 16:46:10   1.356608           1391     1
+T2  Transformer  passthroughTR -> Inputs: [S1] / Outputs: [S2]  2023-10-16 16:46:10  2023-10-16 16:46:10      0.001           1391     2
+S2       Loader                          bppiDS -> Input: [S2]  2023-10-16 16:46:10  2023-10-16 16:46:35  24.297167           1391     3
+
+Total Duration 25.654775000000004 sec
+
+ 
+2023-10-16 16:46:35,056|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|*** End of Job treatment ***
+2023-10-18 17:37:28,719|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-18 17:37:28,734|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.pipelines.sequentialPL
+2023-10-18 17:37:28,750|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.pipelines.sequentialPL imported, instantiate the class
+2023-10-18 17:37:28,750|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:37:28,813|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.extractors] objects(es)
+2023-10-18 17:37:28,813|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:37:28,814|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:37:28,826|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bprepoDS
+2023-10-18 17:37:28,827|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bprepoDS
+2023-10-18 17:37:28,953|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bprepoDS imported, instantiate the class
+2023-10-18 17:37:28,954|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:37:28,954|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bprepoDS
+2023-10-18 17:37:28,972|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bprepoDS instantiated and initialized successfully
+2023-10-18 17:37:28,988|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.loaders] objects(es)
+2023-10-18 17:37:28,989|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:37:28,989|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:37:28,995|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bppiDS
+2023-10-18 17:37:28,995|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bppiDS
+2023-10-18 17:37:29,612|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bppiDS imported, instantiate the class
+2023-10-18 17:37:29,612|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:37:29,613|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bppiDS
+2023-10-18 17:37:29,623|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bppiDS instantiated and initialized successfully
+2023-10-18 17:37:29,643|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.transformers] objects(es)
+2023-10-18 17:37:29,643|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:37:29,646|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:37:29,654|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: pipelite.transformers.passthroughTR
+2023-10-18 17:37:29,655|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.transformers.passthroughTR
+2023-10-18 17:37:29,670|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.transformers.passthroughTR imported, instantiate the class
+2023-10-18 17:37:29,671|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:37:29,671|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: pipelite.transformers.passthroughTR
+2023-10-18 17:37:29,672|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object pipelite.transformers.passthroughTR instantiated and initialized successfully
+2023-10-18 17:37:29,673|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.prepare()|Pipeline preparation
+2023-10-18 17:37:29,674|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.prepare()|Pipeline prepared successfully, execution in this order: [S1 -> S2]
+2023-10-18 17:37:29,676|pipelite.pipelineProcess|ERROR|bppidb.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-18 17:37:29,681|pipelite.pipelineProcess|INFO|bppidb.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-18 17:37:29,685|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.bpQuery()|SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND processname IS NULL
+2023-10-18 17:37:29,689|pipelite.pipelineProcess|INFO|bppidb.bprepoDS.read_sql()|Connect to the ODBC Datasource ...
+2023-10-18 17:37:29,803|pipelite.pipelineProcess|INFO|bppidb.bprepoDS.read_sql()|Connected to ODBC Data source
+2023-10-18 17:37:29,804|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.read_sql()|Execute the query: 
+2023-10-18 17:37:30,026|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.read_sql()|Number of <1587> rows read in the ODBC Data Source
+2023-10-18 17:37:30,032|pipelite.pipelineProcess|WARNING|bppidb.bprepo.bpLogsProcessing.removeStartEndStages()|0 records have been removed (No <End> stage outside the Main Process Page)
+2023-10-18 17:37:30,040|pipelite.pipelineProcess|WARNING|bppidb.bprepo.bpLogsProcessing.removeStartEndStages()|196 records have been removed (No <Start> stage outside the Main Process Page)
+2023-10-18 17:37:30,041|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Extract the input and output parameters
+2023-10-18 17:37:31,198|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 485
+2023-10-18 17:37:31,200|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Filter out the desired parameters
+2023-10-18 17:37:31,206|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 58
+2023-10-18 17:37:31,207|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Build the final dataset with the desired parameters
+2023-10-18 17:37:31,227|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Adding 1 Blue Prism variables in the set
+2023-10-18 17:37:31,306|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.createStageID()|Adding Stage ID field: stageId
+2023-10-18 17:37:31,307|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.dropFields()|Removing 3 fieds
+2023-10-18 17:37:31,313|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ EXTRACT S1 - Rows: 1391 - Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') ]
+2023-10-18 17:37:31,314|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ TRANSFORM T2 - Rows: 1391 ]
+2023-10-18 17:37:31,315|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|Number of rows processed 1391 by T2
+2023-10-18 17:37:31,317|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Get Api call for getting Repository informations ...
+2023-10-18 17:37:31,318|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - HTTP GET Request sent: https://bp-staging.timelinepi.com/api/ext/1.0/repository/repository-import-configuration
+2023-10-18 17:37:31,589|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Informations from BPPI Repository collected successfully
+2023-10-18 17:37:31,590|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Upload the data into the BPPI repository in one transaction
+2023-10-18 17:37:31,592|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiRepository.load()|The data can be uploaded in one unique bloc
+2023-10-18 17:37:31,593|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Get the Server info for upload ...
+2023-10-18 17:37:31,595|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/file/upload-url
+2023-10-18 17:37:31,596|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Data sent: b'{"fileName": "timeline.csv"}'
+2023-10-18 17:37:31,958|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Upload prepared successfully
+2023-10-18 17:37:31,999|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - Upload CSV formatted data to the BPPI Server
+2023-10-18 17:37:32,002|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP PUT Request https://bp-staging.timelinepi.com/timelinepi-repositories-bp-staging/etl/repository/20/1697643451542/timeline.csv?Expires=1697644651&Key-Pair-Id=APKAJJOKFFMHWCD6WJ7Q&Signature=gc4jXlOtjlVide2qoMvJWUGk1W39FH8zrONlRkxbokoZRoH5-ORB2XeSh2TY5bDDHVJ~IcnMIQRWRzApthjg7egRwyn9gbsHPTZYD5SYYqMltBagQz5LfMlyF5p8zy9nxIMB95ZWcUuT8mTwE~4VH3zRNtvUeaYtsa0cpOzn67zVOFXORCm92-YPUgVK3-WmVmYvonc6pHQe3mDSxwTp7D9vyTF~~h8oIbNWHw8HPj7z1PX3pH5b71RwD0vkwAKLhQwkbij8x-x-iL7soRueg458q6DE04MnW6cCVqhfM2Wwf9GyDUC51JfTWCheGYNylvCa8WkQDoz50ggYZ1wMow__
+2023-10-18 17:37:32,812|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP Response <Response [200]>
+2023-10-18 17:37:32,817|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Data was uploaded successfully
+2023-10-18 17:37:32,818|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Load the uploaded data/bloc(s) into the BPPI repository table pipelite
+2023-10-18 17:37:32,820|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Load the file to the BPPI repository
+2023-10-18 17:37:32,821|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/load
+2023-10-18 17:37:32,822|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|HTTP POST Data sent: b'{"fileKeys": ["repository/20/1697643451542/timeline.csv"], "tableName": "pipelite"}'
+2023-10-18 17:37:39,297|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP Response {'processingId': 'NxFQKDkP5HBWfZnSUE9RKQ'}
+2023-10-18 17:37:39,298|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Loading the file with process ID NxFQKDkP5HBWfZnSUE9RKQ 
+2023-10-18 17:37:39,300|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-18 17:37:39,301|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task NxFQKDkP5HBWfZnSUE9RKQ
+2023-10-18 17:37:39,302|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/NxFQKDkP5HBWfZnSUE9RKQ
+2023-10-18 17:37:39,446|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"NxFQKDkP5HBWfZnSUE9RKQ","status":"IN_PROGRESS","subResults":[{"type":"S3_MIGRATION","status":"IN_PROGRESS"}]}'
+2023-10-18 17:37:39,448|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task NxFQKDkP5HBWfZnSUE9RKQ status is IN_PROGRESS 
+2023-10-18 17:37:41,450|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task NxFQKDkP5HBWfZnSUE9RKQ
+2023-10-18 17:37:41,451|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/NxFQKDkP5HBWfZnSUE9RKQ
+2023-10-18 17:37:41,604|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"NxFQKDkP5HBWfZnSUE9RKQ","status":"FINISHED","subResults":[{"type":"S3_MIGRATION","status":"FINISHED"}]}'
+2023-10-18 17:37:41,605|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task NxFQKDkP5HBWfZnSUE9RKQ status is FINISHED 
+2023-10-18 17:37:43,610|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.executeToDo()|Execute these TO DO: pipelite_todo
+2023-10-18 17:37:43,611|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Execute a To Do in BPPI repository
+2023-10-18 17:37:43,612|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|bBPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/execute-todo-list
+2023-10-18 17:37:43,614|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP POST Data sent: b'{"todoListNames": ["pipelite_todo"], "tableName": "pipelite"}'
+2023-10-18 17:37:50,433|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP Response {'processingId': 'FtMhV0nN9iBhHY6PkiZ6qw'}
+2023-10-18 17:37:50,434|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Loading the file with process ID: FtMhV0nN9iBhHY6PkiZ6qw
+2023-10-18 17:37:50,435|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-18 17:37:50,435|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task FtMhV0nN9iBhHY6PkiZ6qw
+2023-10-18 17:37:50,436|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/FtMhV0nN9iBhHY6PkiZ6qw
+2023-10-18 17:37:50,592|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"FtMhV0nN9iBhHY6PkiZ6qw","status":"IN_PROGRESS","subResults":[{"type":"OPERATION","status":"IN_PROGRESS"}]}'
+2023-10-18 17:37:50,593|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task FtMhV0nN9iBhHY6PkiZ6qw status is IN_PROGRESS 
+2023-10-18 17:37:52,610|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task FtMhV0nN9iBhHY6PkiZ6qw
+2023-10-18 17:37:52,612|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/FtMhV0nN9iBhHY6PkiZ6qw
+2023-10-18 17:37:52,774|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"FtMhV0nN9iBhHY6PkiZ6qw","status":"FINISHED","subResults":[{"type":"OPERATION","status":"FINISHED"}]}'
+2023-10-18 17:37:52,776|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task FtMhV0nN9iBhHY6PkiZ6qw status is FINISHED 
+2023-10-18 17:37:54,793|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.executeToDo()|To Do executed successfully
+2023-10-18 17:37:54,796|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ LOAD S2 - Rows: 1391 - Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'stageId'],
+      dtype='object') ]
+2023-10-18 17:37:54,843|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+           Type                                    Description                Start                  End   Duration Rows Processed Order
+id                                                                                                                                      
+S1    Extractor                       bprepoDS -> Output: [S1]  2023-10-18 17:37:29  2023-10-18 17:37:31   1.637299           1391     1
+T2  Transformer  passthroughTR -> Inputs: [S1] / Outputs: [S2]  2023-10-18 17:37:31  2023-10-18 17:37:31   0.001002           1391     2
+S2       Loader                          bppiDS -> Input: [S2]  2023-10-18 17:37:31  2023-10-18 17:37:54  23.479051           1391     3
+
+Total Duration 25.117351999999997 sec
+
+ 
+2023-10-18 17:37:54,844|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|*** End of Job treatment ***
+2023-10-18 17:39:13,239|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-18 17:39:13,257|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.pipelines.sequentialPL
+2023-10-18 17:39:13,259|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.pipelines.sequentialPL imported, instantiate the class
+2023-10-18 17:39:13,261|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:39:13,342|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.extractors] objects(es)
+2023-10-18 17:39:13,343|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:39:13,344|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:39:13,354|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bprepoDS
+2023-10-18 17:39:13,355|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bprepoDS
+2023-10-18 17:39:13,374|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bprepoDS imported, instantiate the class
+2023-10-18 17:39:13,374|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:39:13,375|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bprepoDS
+2023-10-18 17:39:13,388|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bprepoDS instantiated and initialized successfully
+2023-10-18 17:39:13,405|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.loaders] objects(es)
+2023-10-18 17:39:13,406|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:39:13,407|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:39:13,417|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bppiDS
+2023-10-18 17:39:13,418|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bppiDS
+2023-10-18 17:39:13,539|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bppiDS imported, instantiate the class
+2023-10-18 17:39:13,540|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:39:13,540|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bppiDS
+2023-10-18 17:39:13,547|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bppiDS instantiated and initialized successfully
+2023-10-18 17:39:13,562|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.transformers] objects(es)
+2023-10-18 17:39:13,564|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:39:13,564|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:39:13,577|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: pipelite.transformers.passthroughTR
+2023-10-18 17:39:13,578|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.transformers.passthroughTR
+2023-10-18 17:39:13,582|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.transformers.passthroughTR imported, instantiate the class
+2023-10-18 17:39:13,583|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:39:13,584|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: pipelite.transformers.passthroughTR
+2023-10-18 17:39:13,585|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object pipelite.transformers.passthroughTR instantiated and initialized successfully
+2023-10-18 17:39:13,586|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.prepare()|Pipeline preparation
+2023-10-18 17:39:13,588|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.prepare()|Pipeline prepared successfully, execution in this order: [S1 -> S2]
+2023-10-18 17:39:13,590|pipelite.pipelineProcess|ERROR|bppidb.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-18 17:39:28,134|pipelite.pipelineProcess|INFO|bppidb.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-18 17:43:15,975|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-18 17:43:15,992|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.pipelines.sequentialPL
+2023-10-18 17:43:15,995|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.pipelines.sequentialPL imported, instantiate the class
+2023-10-18 17:43:15,996|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:43:16,054|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.extractors] objects(es)
+2023-10-18 17:43:16,055|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:43:16,056|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:43:16,066|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bprepoDS
+2023-10-18 17:43:16,067|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bprepoDS
+2023-10-18 17:43:16,088|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bprepoDS imported, instantiate the class
+2023-10-18 17:43:16,089|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:43:16,089|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bprepoDS
+2023-10-18 17:43:16,102|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bprepoDS instantiated and initialized successfully
+2023-10-18 17:43:16,118|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.loaders] objects(es)
+2023-10-18 17:43:16,119|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:43:16,119|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:43:16,127|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bppiDS
+2023-10-18 17:43:16,127|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bppiDS
+2023-10-18 17:43:16,281|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bppiDS imported, instantiate the class
+2023-10-18 17:43:16,282|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:43:16,283|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bppiDS
+2023-10-18 17:43:16,289|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bppiDS instantiated and initialized successfully
+2023-10-18 17:43:16,303|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.transformers] objects(es)
+2023-10-18 17:43:16,304|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:43:16,305|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:43:16,312|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: pipelite.transformers.passthroughTR
+2023-10-18 17:43:16,313|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.transformers.passthroughTR
+2023-10-18 17:43:16,318|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.transformers.passthroughTR imported, instantiate the class
+2023-10-18 17:43:16,319|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:43:16,319|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: pipelite.transformers.passthroughTR
+2023-10-18 17:43:16,320|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object pipelite.transformers.passthroughTR instantiated and initialized successfully
+2023-10-18 17:43:16,321|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.prepare()|Pipeline preparation
+2023-10-18 17:43:16,322|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.prepare()|Pipeline prepared successfully, execution in this order: [S1 -> S2]
+2023-10-18 17:43:16,323|pipelite.pipelineProcess|ERROR|bppidb.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-18 17:44:18,326|pipelite.pipelineProcess|INFO|pipelite.pipelineProcess.process()|pipelite initialisation ...
+2023-10-18 17:44:18,346|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.pipelines.sequentialPL
+2023-10-18 17:44:18,349|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.pipelines.sequentialPL imported, instantiate the class
+2023-10-18 17:44:18,350|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:44:18,429|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.extractors] objects(es)
+2023-10-18 17:44:18,429|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:44:18,430|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:44:18,441|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bprepoDS
+2023-10-18 17:44:18,442|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bprepoDS
+2023-10-18 17:44:18,466|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bprepoDS imported, instantiate the class
+2023-10-18 17:44:18,467|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:44:18,468|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bprepoDS
+2023-10-18 17:44:18,484|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bprepoDS instantiated and initialized successfully
+2023-10-18 17:44:18,503|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.loaders] objects(es)
+2023-10-18 17:44:18,504|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:44:18,505|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:44:18,513|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: bppidb.bppiDS
+2023-10-18 17:44:18,514|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> bppidb.bppiDS
+2023-10-18 17:44:18,671|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module bppidb.bppiDS imported, instantiate the class
+2023-10-18 17:44:18,672|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:44:18,673|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: bppidb.bppiDS
+2023-10-18 17:44:18,683|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object bppidb.bppiDS instantiated and initialized successfully
+2023-10-18 17:44:18,700|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|There is/are 1 [$.transformers] objects(es)
+2023-10-18 17:44:18,700|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObjectsByCategory()|Intantiate needs and configured objects ...
+2023-10-18 17:44:18,701|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Validate and initialize Object...
+2023-10-18 17:44:18,709|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Instantiate Object: pipelite.transformers.passthroughTR
+2023-10-18 17:44:18,710|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Import module -> pipelite.transformers.passthroughTR
+2023-10-18 17:44:18,713|pipelite.pipelineProcess|DEBUG|pipelite.etlBaseObject|Module pipelite.transformers.passthroughTR imported, instantiate the class
+2023-10-18 17:44:18,714|pipelite.pipelineProcess|INFO|pipelite.etlBaseObject|Class instantiated successfully
+2023-10-18 17:44:18,715|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|Initialize Object: pipelite.transformers.passthroughTR
+2023-10-18 17:44:18,715|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.__instantiateETLObject()|ETL Object pipelite.transformers.passthroughTR instantiated and initialized successfully
+2023-10-18 17:44:18,716|pipelite.pipelineProcess|DEBUG|pipelite.pipelines.sequentialPL.prepare()|Pipeline preparation
+2023-10-18 17:44:18,717|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.prepare()|Pipeline prepared successfully, execution in this order: [S1 -> S2]
+2023-10-18 17:44:18,719|pipelite.pipelineProcess|ERROR|bppidb.bprepoDS.__getDeltaTag()|Unable to read/get the tagged delta date
+2023-10-18 17:44:20,216|pipelite.pipelineProcess|INFO|bppidb.bprepo.blueprismSQLBuilder.setSubstDict()|FULL Load requested
+2023-10-18 17:44:38,942|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.bpQuery()|SQL -> SELECT logId, 
+LOG.sessionnumber AS SessionID, 
+stageName, 
+result,
+LOG.startdatetime AS resourceStartTime, 
+BPAResource.name AS ResourceName,
+actionname, 
+stageType, 
+pagename, 
+attributexml,
+IIF(processname IS NULL, 'VBO', 'PROC') as OBJECT_TYPE, 
+IIF(processname IS NULL, objectname, processname) as OBJECT_NAME
+FROM BPASessionLog_NonUnicode AS LOG, BPASession, BPAResource
+WHERE LOG.sessionnumber IN 
+(SELECT distinct sessionnumber  
+            FROM BPASessionLog_NonUnicode 
+		    WHERE processname = 'IFA Application Process'
+            AND 1=1)
+AND LOG.sessionnumber = BPASession.sessionnumber
+AND BPAResource.resourceid = BPASession.runningresourceid
+AND stagetype NOT IN(1,4,65536,8,536870912)
+AND 1=1
+2023-10-18 17:44:38,951|pipelite.pipelineProcess|INFO|bppidb.bprepoDS.read_sql()|Connect to the ODBC Datasource ...
+2023-10-18 17:44:39,107|pipelite.pipelineProcess|INFO|bppidb.bprepoDS.read_sql()|Connected to ODBC Data source
+2023-10-18 17:44:39,109|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.read_sql()|Execute the query: 
+2023-10-18 17:44:39,317|pipelite.pipelineProcess|DEBUG|bppidb.bprepoDS.read_sql()|Number of <3932> rows read in the ODBC Data Source
+2023-10-18 17:44:39,328|pipelite.pipelineProcess|WARNING|bppidb.bprepo.bpLogsProcessing.removeStartEndStages()|205 records have been removed (No <End> stage outside the Main Process Page)
+2023-10-18 17:44:39,335|pipelite.pipelineProcess|WARNING|bppidb.bprepo.bpLogsProcessing.removeStartEndStages()|401 records have been removed (No <Start> stage outside the Main Process Page)
+2023-10-18 17:44:39,337|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Extract the input and output parameters
+2023-10-18 17:44:49,546|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 2762
+2023-10-18 17:44:49,548|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Filter out the desired parameters
+2023-10-18 17:44:49,559|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Number of attributes found: 828
+2023-10-18 17:44:49,561|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Build the final dataset with the desired parameters
+2023-10-18 17:44:49,593|pipelite.pipelineProcess|INFO|bppidb.bprepo.bpLogsProcessing.__getAttributesFromLogs()|Adding 5 Blue Prism variables in the set
+2023-10-18 17:44:49,791|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.createStageID()|Adding Stage ID field: stageId
+2023-10-18 17:44:49,792|pipelite.pipelineProcess|DEBUG|bppidb.bprepo.bpLogsProcessing.dropFields()|Removing 3 fieds
+2023-10-18 17:44:49,801|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ EXTRACT S1 - Rows: 3326 - Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'Deposit', 'Investment', 'Product', 'Reason Text',
+       'stageId'],
+      dtype='object') ]
+2023-10-18 17:44:49,804|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ TRANSFORM T2 - Rows: 3326 ]
+2023-10-18 17:44:49,805|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|Number of rows processed 3326 by T2
+2023-10-18 17:44:49,806|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Get Api call for getting Repository informations ...
+2023-10-18 17:44:49,807|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - HTTP GET Request sent: https://bp-staging.timelinepi.com/api/ext/1.0/repository/repository-import-configuration
+2023-10-18 17:44:50,229|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getRepositoryConfiguration()|BPPI API - Informations from BPPI Repository collected successfully
+2023-10-18 17:44:50,231|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Upload the data into the BPPI repository in one transaction
+2023-10-18 17:44:50,232|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiRepository.load()|The data can be uploaded in one unique bloc
+2023-10-18 17:44:50,234|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Get the Server info for upload ...
+2023-10-18 17:44:50,236|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/file/upload-url
+2023-10-18 17:44:50,239|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - HTTP POST Data sent: b'{"fileName": "timeline.csv"}'
+2023-10-18 17:44:50,583|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.prepareUpload()|BPPI API - Upload prepared successfully
+2023-10-18 17:44:50,646|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - Upload CSV formatted data to the BPPI Server
+2023-10-18 17:44:50,648|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP PUT Request https://bp-staging.timelinepi.com/timelinepi-repositories-bp-staging/etl/repository/20/1697643890155/timeline.csv?Expires=1697645090&Key-Pair-Id=APKAJJOKFFMHWCD6WJ7Q&Signature=DG298ImO9PCrTYi~ov-7U~BQpQ1lztKdolg5Fbc7R1xMFjiePyPO6NagK3PA8v8suxJ5Y1mD4O9UydYvI8MyQD3XQ2Sgpkf0YXJuQmfEjzwjgy3LqMFAjVaH2y~YjuGHQ1gkqxi3hmQPa7h-GDkCuYOOiYQfkFrkqBahG6ZXm00bmI0OrL0xDZpJUMdHJL43wqutB4woZG1IpdkR40YfXl6eH2HSItHsI7zq4lyBI--zTARb~NR9OTF6wUrdI8j0g-1kySqXKGXwGmaD6aWReQSrHU2B5tYtCeV2tENflqWV-~sufUcjOfdgDAENJ0T2BImLBgyeO5NFan-CZHliNA__
+2023-10-18 17:44:51,825|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.uploadData()|BPPI API - HTTP Response <Response [200]>
+2023-10-18 17:44:51,831|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Data was uploaded successfully
+2023-10-18 17:44:51,832|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.load()|Load the uploaded data/bloc(s) into the BPPI repository table pipelite
+2023-10-18 17:44:51,834|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Load the file to the BPPI repository
+2023-10-18 17:44:51,837|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/load
+2023-10-18 17:44:51,839|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|HTTP POST Data sent: b'{"fileKeys": ["repository/20/1697643890155/timeline.csv"], "tableName": "pipelite"}'
+2023-10-18 17:44:58,668|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - HTTP Response {'processingId': 'eMn-Y99UksYIf2Mn027KeQ'}
+2023-10-18 17:44:58,669|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.loadFileToBPPIRepository()|BPPI API - Loading the file with process ID eMn-Y99UksYIf2Mn027KeQ 
+2023-10-18 17:44:58,669|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-18 17:44:58,670|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task eMn-Y99UksYIf2Mn027KeQ
+2023-10-18 17:44:58,671|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/eMn-Y99UksYIf2Mn027KeQ
+2023-10-18 17:44:58,817|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"eMn-Y99UksYIf2Mn027KeQ","status":"IN_PROGRESS","subResults":[{"type":"S3_MIGRATION","status":"IN_PROGRESS"}]}'
+2023-10-18 17:44:58,818|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task eMn-Y99UksYIf2Mn027KeQ status is IN_PROGRESS 
+2023-10-18 17:45:00,834|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task eMn-Y99UksYIf2Mn027KeQ
+2023-10-18 17:45:00,835|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/eMn-Y99UksYIf2Mn027KeQ
+2023-10-18 17:45:01,018|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"eMn-Y99UksYIf2Mn027KeQ","status":"FINISHED","subResults":[{"type":"S3_MIGRATION","status":"FINISHED"}]}'
+2023-10-18 17:45:01,019|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task eMn-Y99UksYIf2Mn027KeQ status is FINISHED 
+2023-10-18 17:45:03,028|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.executeToDo()|Execute these TO DO: pipelite_todo
+2023-10-18 17:45:03,031|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Execute a To Do in BPPI repository
+2023-10-18 17:45:03,032|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|bBPPI API - HTTP POST Request https://bp-staging.timelinepi.com/api/ext/1.0/repository/20/execute-todo-list
+2023-10-18 17:45:03,032|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP POST Data sent: b'{"todoListNames": ["pipelite_todo"], "tableName": "pipelite"}'
+2023-10-18 17:45:10,474|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - HTTP Response {'processingId': '8SnwLyol7M7QuKTYUZceYw'}
+2023-10-18 17:45:10,475|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.executeTODO()|BPPI API - Loading the file with process ID: 8SnwLyol7M7QuKTYUZceYw
+2023-10-18 17:45:10,476|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.waitForEndOfProcessing()|Wait for the end of a process execution
+2023-10-18 17:45:10,476|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task 8SnwLyol7M7QuKTYUZceYw
+2023-10-18 17:45:10,476|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/8SnwLyol7M7QuKTYUZceYw
+2023-10-18 17:45:10,618|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"8SnwLyol7M7QuKTYUZceYw","status":"IN_PROGRESS","subResults":[{"type":"OPERATION","status":"IN_PROGRESS"}]}'
+2023-10-18 17:45:10,619|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task 8SnwLyol7M7QuKTYUZceYw status is IN_PROGRESS 
+2023-10-18 17:45:12,636|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - Check status for the BPPI Task 8SnwLyol7M7QuKTYUZceYw
+2023-10-18 17:45:12,638|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|HTTP GET Request https://bp-staging.timelinepi.com/api/ext/1.0/processing/8SnwLyol7M7QuKTYUZceYw
+2023-10-18 17:45:12,819|pipelite.pipelineProcess|DEBUG|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - HTTP Response b'{"id":"8SnwLyol7M7QuKTYUZceYw","status":"FINISHED","subResults":[{"type":"OPERATION","status":"FINISHED"}]}'
+2023-10-18 17:45:12,821|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiApiRepositoryWrapper.getProcessingStatus()|BPPI API - BPPI Task 8SnwLyol7M7QuKTYUZceYw status is FINISHED 
+2023-10-18 17:45:14,837|pipelite.pipelineProcess|INFO|bppidb.bppi.bppiRepository.executeToDo()|To Do executed successfully
+2023-10-18 17:45:14,840|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.execute()|[ LOAD S2 - Rows: 3326 - Columns: Index(['logId', 'SessionID', 'stageName', 'result', 'resourceStartTime',
+       'ResourceName', 'actionname', 'stageType', 'pagename',
+       'Customer Number', 'Deposit', 'Investment', 'Product', 'Reason Text',
+       'stageId'],
+      dtype='object') ]
+2023-10-18 17:45:14,868|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|Pipeline Report 
+
+--- PIPELITE REPORT ---
+           Type                                    Description                Start                  End   Duration Rows Processed Order
+id                                                                                                                                      
+S1    Extractor                       bprepoDS -> Output: [S1]  2023-10-18 17:44:18  2023-10-18 17:44:49  31.081998           3326     1
+T2  Transformer  passthroughTR -> Inputs: [S1] / Outputs: [S2]  2023-10-18 17:44:49  2023-10-18 17:44:49   0.001302           3326     2
+S2       Loader                          bppiDS -> Input: [S2]  2023-10-18 17:44:49  2023-10-18 17:45:14  25.033951           3326     3
+
+Total Duration 56.117251 sec
+
+ 
+2023-10-18 17:45:14,869|pipelite.pipelineProcess|INFO|pipelite.pipelines.sequentialPL.terminate()|*** End of Job treatment ***

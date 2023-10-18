@@ -30,7 +30,7 @@ class blueprismSQLBuilder(genericSQLBuilder):
             novbo = NO_FILTER
 
             # Build the filters on the VBO only
-            if (self.__includeVBO):
+            if (not self.__includeVBO):
                 novbo = C.BPLOG_PROCESSNAME_COL + " IS NULL"
 
             # Date Filtering and/or DELTA vs FULL
