@@ -67,7 +67,7 @@ class bprepoDS(odbcDS):
                     fromdate = file.read()
                 return fromdate
             except:
-                self.log.error("Unable to read/get the tagged delta date")
+                self.log.warning("Unable to read/get the tagged delta date")
                 return C.EMPTY
         else:
             return C.EMPTY
@@ -130,7 +130,7 @@ class bprepoDS(odbcDS):
             # drop working or obsolete fields
             logs.dropFields([C.COL_OBJECT_TAB, C.BPLOG_OBJTYPE_COL, C.BPLOG_OBJNAME_COL])
 
-            newLogs = plDataset()
+            newLogs = plDataset(self.config, self.log)
             newLogs.set(logs.content)
 
         # Update the date for the next delta load

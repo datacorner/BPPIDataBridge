@@ -222,7 +222,7 @@ class bpAPIExtractor(BODataSource):
             access_token = self.__getAccessToken()
             if (access_token != None):
                 sessionIDList = self.__getSessionIDList(access_token)
-                logs = plDataset()
+                logs = plDataset(self.config, self.log)
                 # Aggregate the logs from all the sessions
                 for session in sessionIDList:
                     self.log.debug("BP API - Collect logs from session {} ...".format(session))
@@ -239,4 +239,4 @@ class bpAPIExtractor(BODataSource):
         
         except Exception as e:
             self.log.error("bpAPIReader.read() Error: " + str(e))
-            return plDataset()
+            return plDataset(self.config, self.log)
